@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const SectionOneContainer = styled.div`
   width: 100%;
+  margin-bottom: -2rem;
 `;
 
 export const SectionOneColumnContainer = styled.div`
