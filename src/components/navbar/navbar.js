@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { FaTimes, FaBars } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
-
+import logo from "../../assets/navbar/logo2.png";
 import {
   Nav,
-  NavContainer,
-  Logo,
-  Icon,
+  NavbarContainer,
+  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
-  LinkScroll,
+  NavLinks,
+  NavImg,
+  NavText,
 } from "./navbar.elements";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [click, setClick] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [button, setButton] = useState(true);
 
-  const handleToggle = () => setToggle(!toggle);
-  const closeMenu = () => setToggle(false);
-
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(true);
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -32,59 +33,38 @@ const Navbar = () => {
     showButton();
   }, []);
 
-  const [scrollNav, setScrollnav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollnav(true);
-    } else {
-      setScrollnav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
-
   window.addEventListener("resize", showButton);
 
   return (
-    <IconContext.Provider value={{ color: "#2F3A56" }}>
-      <Nav scrollNav={scrollNav}>
-        <NavContainer>
-          <Logo to="/" onClick={closeMenu}>
-            {/* <LinkScroll to="/" smooth onClick={closeMenu}> */}
-            Logo
-            {/* </LinkScroll> */}
-          </Logo>
-          <MobileIcon onClick={handleToggle}>
-            {toggle ? <FaTimes /> : <FaBars />}
-          </MobileIcon>
-          <NavMenu onClick={handleToggle} toggle={toggle}>
-            <NavItem>
-              <LinkScroll to="/concept" smooth onClick={closeMenu}>
-                ABOUT
-              </LinkScroll>
-            </NavItem>
-            <NavItem>
-              <LinkScroll to="/competition" smooth onClick={closeMenu}>
-                COMPETITION
-              </LinkScroll>
-            </NavItem>
-            <NavItem>
-              <LinkScroll to="/event" smooth onClick={closeMenu}>
-                EVENT
-              </LinkScroll>
-            </NavItem>
-            <NavItem>
-              <LinkScroll to="/contact" smooth onClick={closeMenu}>
-                CONTACT
-              </LinkScroll>
-            </NavItem>
-          </NavMenu>
-        </NavContainer>
-      </Nav>
-    </IconContext.Provider>
+    <>
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <Nav>
+          <NavbarContainer>
+            <NavLogo to="/" onClick={closeMobileMenu}>
+              <NavImg src={logo} alt="bye" />
+              <NavText>TARUNA MEGA KARYA</NavText>
+            </NavLogo>
+            <MobileIcon onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLinks to="/">Home</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/commands">Product</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/releases">Portofolio</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/submit-ideas">Contact Us</NavLinks>
+              </NavItem>
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
+    </>
   );
 };
 

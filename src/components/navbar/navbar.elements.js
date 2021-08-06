@@ -1,56 +1,69 @@
-// import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { FaMagento } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import { Link as Scroll } from "react-scroll";
-
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
+  background: #101010;
   height: 80px;
   display: flex;
+  padding: 0 5%;
   justify-content: center;
-  z-index: 999;
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
-  width: 100%;
-  background-color: #101010;
-  font-size: 1.2rem;
-  top: 0;
   align-items: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  @media screen and (max-width: 960px) {
-    opacity: 100%;
-    position: fixed;
-  }
+  font-size: 1.2 rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 `;
 
-export const NavContainer = styled(Container)`
+export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
+  ${Container}
 `;
 
-export const Logo = styled(Link)`
+export const NavImg = styled.img`
+  padding-top: 2.5%;
+  padding-right: 2.5%;
+  @media screen and (max-width: 960px) {
+    transform: translate(-70%, 0);
+  }
+`;
+
+export const NavLogo = styled(Link)`
+  color: #fff;
+  width: 80%;
+  margin-bottom: 0.5rem;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
   display: flex;
-  margin-left: -20px;
   align-items: center;
-  // background: #000;
 `;
 
-export const Icon = styled.img`
-  width: 100px;
-  &:hover {
-    width: 120px;
-    transition: all 0.5s ease;
+export const NavText = styled.div`
+  padding-top: 1%;
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-40%, 100%);
+    font-size: 1rem;
+    cursor: pointer;
   }
+`;
+
+export const NavIcon = styled(FaMagento)`
+  margin-right: 0.5rem;
 `;
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
     top: 0;
@@ -58,111 +71,74 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #000;
   }
 `;
 
 export const NavMenu = styled.ul`
+  width: 120%;
+  padding-left: 25%;
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
   @media screen and (max-width: 960px) {
-    display: ${({ toggle }) => (toggle ? "flex" : "none")};
+    padding-left: 0%;
+    display: flex;
+    text-align: center;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 120vh;
     position: absolute;
-    top: 80px;
-    right: ${({ toggle }) => (toggle ? "0" : "-100%")};
+    top: 100%;
+    left: ${({ click }) => (click ? "0%" : "-100%")};
     opacity: 1;
-    transition: all 0.5s ease;
-    background: #fff;
+    transition: all 0.5s ease-in-out;
+    background: #101522;
   }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
+  padding: 0 3.5%;
+  margin-bottom: 1rem;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 5px solid #2f3a56;
+    border-bottom: 2px solid #101522;
+    transition: all 1s ease;
+    border-bottom: 2px solid white;
   }
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 25%;
     &:hover {
-      border: none;
+      border-bottom: 2px solid #101522;
+      transition: all 1s ease;
+      border-bottom: 2px solid white;
     }
   }
 `;
 
-export const Links = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  font-family: "Poppins";
-  font-weight: bold;
-  color: #000;
-  cursor: default;
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-    color: #000;
-  }
-  &:hover {
-    color: #f7f2ec;
-    transition: 0.3s ease-in-out;
-  }
-`;
-
-export const LinkScroll = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  font-family: "Poppins";
-  font-weight: bold;
-  color: #bbb;
-  cursor: pointer;
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-    color: #000;
-  }
-  &:hover {
-    color: #f7f2ec;
-    transition: 0.3s ease-in-out;
-  }
-`;
-
-export const Button = styled.button`
-  border-radius: 20px;
-  background: ${({ primary }) => (primary ? "#000" : "#0467FB")};
-  white-space: nowrap;
-  padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
+export const NavLinks = styled(Link)`
   color: #fff;
-  font-size: ${({ big }) => (big ? "20px" : "16px")};
-  outline: none;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    transition: all 0.2s ease-out;
-    background: #fff;
-    background: ${({ primary }) => (primary ? "#0467FB" : "#000")};
-    color: #2f3a56;
-  }
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  height: 100%;
   @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem 2rem 2rem 0;
     width: 100%;
+    display: table;
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
+    }
   }
 `;
 
-export const NavButton = styled.li`
+export const NavItemBtn = styled.li`
   @media screen and (max-width: 960px) {
     display: flex;
     justify-content: center;
@@ -172,7 +148,7 @@ export const NavButton = styled.li`
   }
 `;
 
-export const ButtonLink = styled.a`
+export const NavBtnLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
