@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../../globalStyles";
 
-export const FooterContainer = styled(Container)`
+export const FooterContainer = styled.div`
   background-color: #101010;
   padding-top: 1%;
   padding-bottom: 1%;
