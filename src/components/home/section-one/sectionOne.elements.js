@@ -69,8 +69,8 @@ export const SectionOneColumnImage = styled.img`
     padding-left: 0%;
     padding-top: 0%;
     font-size: 1rem;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 15.5rem;
     object-fit: cover;
   }
 `;
@@ -80,6 +80,9 @@ export const SectionOneColumnContainerTwo = styled.div`
   @media screen and (max-width: 960px) {
     height: 100%;
     padding-top: 0%;
+    min-width: 800px;
+    margin: 0 auto;
+    margin-top: 1%;
   }
 `;
 
@@ -108,11 +111,10 @@ export const SectionOneColumnContainerRectangleFront = styled.div`
   display: flex;
   background-color: #b01f24;
   @media screen and (max-width: 960px) {
-    position: relative;
     top: 16.5em;
     left: 6rem;
-    margin-top: -2.5rem;
-    height: 2.5rem;
-    width: 15rem;
+    margin-top: -3rem;
+    height: 2rem;
+    width: 30rem;
   }
 `;

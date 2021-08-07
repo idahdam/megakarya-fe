@@ -52,13 +52,13 @@ const Navbar = () => {
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/commands">Product</NavLinks>
+                <NavLinks to="/product">Product</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/releases">Portofolio</NavLinks>
+                <NavLinks to="/portfolio">Portfolio</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/submit-ideas">Contact Us</NavLinks>
+                <NavLinks to="/contactus">Contact Us</NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

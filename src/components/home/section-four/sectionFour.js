@@ -10,45 +10,55 @@ import {
   SectionFourTitle,
   SectionFourDescription,
   SectionFourLink,
+  SectionFourWhiteColumn,
+  SectionFourGreyColumn,
 } from "./sectionFour.elements";
+import office from "../../../assets/main/office.png";
 
 const SectionFour = () => {
   return (
     <SectionFourContainer>
       <SectionFourRow>
         <SectionFourColumn>
-          <SectionFourImageFirstRow />
+          <SectionFourImageFirstRow src={office} alt="office" />
         </SectionFourColumn>
         <SectionFourColumn>
-          <SectionFourTextSecondRow>
-            <SectionFourTitle>
-              Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </SectionFourTitle>
-            <SectionFourDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi
-              urna, eu, sit orci nulla malesuada nunc. Bibendum odio vel neque
-              nisi velit. Aliquam pellentesque lobortis.
-            </SectionFourDescription>
-            <SectionFourLink></SectionFourLink>
-          </SectionFourTextSecondRow>
+          <SectionFourGreyColumn>
+            <SectionFourTextSecondRow>
+              <SectionFourTitle>
+                Product, Lorem ipsum dolor sit amet, consectetur elit.
+              </SectionFourTitle>
+              <SectionFourDescription>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisi urna, eu, sit orci nulla malesuada nunc. Bibendum odio
+                vel neque nisi velit. Aliquam pellentesque lobortis.
+              </SectionFourDescription>
+              <SectionFourLink to="/product">LEARN MORE</SectionFourLink>
+            </SectionFourTextSecondRow>
+          </SectionFourGreyColumn>
         </SectionFourColumn>
       </SectionFourRow>
       <SectionFourRow>
         <SectionFourColumn>
-          <SectionFourTextFirstRow>
-            <SectionFourTitle>
-              Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </SectionFourTitle>
-            <SectionFourDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi
-              urna, eu, sit orci nulla malesuada nunc. Bibendum odio vel neque
-              nisi velit. Aliquam pellentesque lobortis.
-            </SectionFourDescription>
-            <SectionFourLink></SectionFourLink>
-          </SectionFourTextFirstRow>
+          <SectionFourWhiteColumn>
+            <SectionFourTextFirstRow>
+              <SectionFourTitle>
+                Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </SectionFourTitle>
+              <SectionFourDescription>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisi urna, eu, sit orci nulla malesuada nunc. Bibendum odio
+                vel neque nisi velit. Aliquam pellentesque lobortis.
+              </SectionFourDescription>
+              <SectionFourLink to="/portfolio">LEARN MORE</SectionFourLink>
+            </SectionFourTextFirstRow>
+          </SectionFourWhiteColumn>
         </SectionFourColumn>
         <SectionFourColumn>
-          <SectionFourImageSecondRow />
+          <SectionFourGreyColumn>
+            <SectionFourImageSecondRow src={office} alt="office" />
+          </SectionFourGreyColumn>
         </SectionFourColumn>
       </SectionFourRow>
     </SectionFourContainer>
