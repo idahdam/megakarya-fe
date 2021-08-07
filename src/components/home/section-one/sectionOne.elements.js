@@ -4,6 +4,9 @@ import styled from "styled-components";
 export const SectionOneContainer = styled.div`
   width: 100%;
   margin-bottom: -2rem;
+  @media screen and (max-width: 960px) {
+    padding-bottom: 10%;
+  }
 `;
 
 export const SectionOneColumnContainer = styled.div`

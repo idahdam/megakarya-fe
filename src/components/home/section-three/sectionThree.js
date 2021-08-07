@@ -24,7 +24,10 @@ const SectionThree = () => {
             <SectionThreeImage src={card} alt="Avatar" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
-              <SectionThreeDescCard>Architect & Engineer</SectionThreeDescCard>
+              <SectionThreeDescCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </SectionThreeDescCard>
             </SectionThreeTextContainer>
           </SectionThreeCard>
         </SectionThreeColumn>
@@ -33,7 +36,10 @@ const SectionThree = () => {
             <SectionThreeImage src={card} alt="Avatar" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
-              <SectionThreeDescCard>Architect & Engineer</SectionThreeDescCard>
+              <SectionThreeDescCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </SectionThreeDescCard>
             </SectionThreeTextContainer>
           </SectionThreeCard>
         </SectionThreeColumn>
@@ -42,7 +48,10 @@ const SectionThree = () => {
             <SectionThreeImage src={card} alt="Avatar" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
-              <SectionThreeDescCard>Architect & Engineer</SectionThreeDescCard>
+              <SectionThreeDescCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </SectionThreeDescCard>
             </SectionThreeTextContainer>
           </SectionThreeCard>
         </SectionThreeColumn>
@@ -51,7 +60,10 @@ const SectionThree = () => {
             <SectionThreeImage src={card} alt="Avatar" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
-              <SectionThreeDescCard>Architect & Engineer</SectionThreeDescCard>
+              <SectionThreeDescCard>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </SectionThreeDescCard>
             </SectionThreeTextContainer>
           </SectionThreeCard>
         </SectionThreeColumn>

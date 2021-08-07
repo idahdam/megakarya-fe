@@ -42,8 +42,8 @@ const Navbar = () => {
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
               <NavImg src={logo} alt="bye" />
-              <NavText>TARUNA MEGA KARYA</NavText>
             </NavLogo>
+            <NavText>TARUNA MEGA KARYA</NavText>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>

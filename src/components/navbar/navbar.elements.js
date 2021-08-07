@@ -33,27 +33,28 @@ export const NavImg = styled.img`
 
 export const NavLogo = styled(Link)`
   color: #fff;
-  width: 80%;
+  width: 10%;
   margin-bottom: 0.5rem;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 960px) {
+  }
 `;
 
 export const NavText = styled.div`
-  padding-top: 1%;
+  width: 62.5%;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 2%;
+  color: white;
   @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-40%, 100%);
-    font-size: 1rem;
-    cursor: pointer;
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 2%;
+    width: 100%;
   }
 `;
 
@@ -95,7 +96,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? "0%" : "-100%")};
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    background: #101522;
+    background-color: #101010;
   }
 `;
 
@@ -128,7 +129,7 @@ export const NavLinks = styled(Link)`
   height: 100%;
   @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 2rem 2rem 2rem 0;
+    padding: 2rem 0rem 0rem 0;
     width: 100%;
     display: table;
     &:hover {
