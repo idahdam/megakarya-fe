@@ -36,7 +36,9 @@ export const SectionThreeCard = styled.div`
   background-color: #e8e8e8;
   @media screen and (max-width: 960px) {
     padding-bottom: 3%;
+    margin: auto;
     width: 90%;
+    padding: 0px;
   }
 `;
 
