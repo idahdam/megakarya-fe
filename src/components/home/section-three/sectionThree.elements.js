@@ -11,7 +11,7 @@ export const SectionThreeColumn = styled.div`
   @media screen and (max-width: 960px) {
     padding: 0px;
     padding-bottom: 10%;
-    flex: 100%;
+    flex: 50%;
   }
 `;
 export const SectionThreeTitle = styled.div`
@@ -34,7 +34,9 @@ export const SectionThreeCard = styled.div`
   transition: 0.3s;
   padding-bottom: 3%;
   background-color: #e8e8e8;
-  :hover {
+  @media screen and (max-width: 960px) {
+    padding-bottom: 3%;
+    width: 90%;
   }
 `;
 
@@ -53,6 +55,9 @@ export const SectionThreeDescCard = styled.div`
   padding-top: 1.5%;
   padding-bottom: 3%;
 `;
+
+export const SectionTwoPriceCard = styled.div``;
+
 export const SectionThreeTitleCard = styled.div`
   padding-top: 3%;
   padding-bottom: 1.5%;
