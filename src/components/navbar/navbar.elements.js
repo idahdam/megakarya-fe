@@ -34,7 +34,7 @@ export const NavImg = styled.img`
 export const NavLogo = styled(Link)`
   color: #fff;
   width: 10%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -48,7 +48,7 @@ export const NavText = styled.div`
   width: 62.5%;
   font-weight: bold;
   font-size: 1rem;
-  padding-top: 2%;
+  padding-top: 2.5%;
   color: white;
   @media screen and (max-width: 960px) {
     text-align: center;

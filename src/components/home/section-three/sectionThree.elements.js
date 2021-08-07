@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionThreeContainer = styled.div`
-  padding: 5% 0%;
+  padding: 2.5% 0%;
   box-sizing: border-box;
 `;
 export const SectionThreeLine = styled.span``;
@@ -27,7 +27,7 @@ export const SectionThreeTitle = styled.div`
 export const SectionThreeRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 1% 10%;
+  padding: 1% 9%;
 `;
 
 export const SectionThreeCard = styled.div`

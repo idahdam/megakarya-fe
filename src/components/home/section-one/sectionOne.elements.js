@@ -25,6 +25,7 @@ export const SectionOneRow = styled.div`
   display: flex;
   @media screen and (max-width: 960px) {
     display: block;
+    overflow: hidden;
   }
 `;
 

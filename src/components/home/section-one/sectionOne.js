@@ -54,7 +54,11 @@ const SectionOne = () => {
               <SectionOneColumnContainerTwo>
                 <SectionOneColumnContainerRectangleFront></SectionOneColumnContainerRectangleFront>
                 <SectionOneColumnContainerImage>
-                  <SectionOneColumnImage src={hero} alt="hero-one" />
+                  <SectionOneColumnImage
+                    src={hero}
+                    alt="hero-one"
+                    loading="lazy"
+                  />
                 </SectionOneColumnContainerImage>
                 <SectionOneColumnContainerRectangleBack></SectionOneColumnContainerRectangleBack>
               </SectionOneColumnContainerTwo>
@@ -66,7 +70,11 @@ const SectionOne = () => {
             <SectionOneColumn>
               <SectionOneColumnContainerTwo>
                 <SectionOneColumnContainerRectangleFront></SectionOneColumnContainerRectangleFront>
-                <SectionOneColumnImage src={hero} alt="hero-one" />
+                <SectionOneColumnImage
+                  src={hero}
+                  alt="hero-one"
+                  loading="lazy"
+                />
               </SectionOneColumnContainerTwo>
             </SectionOneColumn>
             <SectionOneColumn>

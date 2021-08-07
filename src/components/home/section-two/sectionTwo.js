@@ -13,7 +13,7 @@ const SectionTwo = () => {
   return (
     <SectionTwoContainer>
       <SectionTwoThumbnail>
-        <SectionTwoImage src={vision} alt="vision" />
+        <SectionTwoImage src={vision} alt="vision" loading="lazy" />
         <SectionTwoCaption>
           <SectionTwoTitle>Vision</SectionTwoTitle>
           <SectionTwoDescription>

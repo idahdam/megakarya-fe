@@ -21,7 +21,7 @@ const SectionThree = () => {
       <SectionThreeRow>
         <SectionThreeColumn>
           <SectionThreeCard>
-            <SectionThreeImage src={card} alt="Avatar" />
+            <SectionThreeImage src={card} alt="Avatar" loading="lazy" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
               <SectionThreeDescCard>
@@ -33,7 +33,7 @@ const SectionThree = () => {
         </SectionThreeColumn>
         <SectionThreeColumn>
           <SectionThreeCard>
-            <SectionThreeImage src={card} alt="Avatar" />
+            <SectionThreeImage src={card} alt="Avatar" loading="lazy" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
               <SectionThreeDescCard>
@@ -45,7 +45,7 @@ const SectionThree = () => {
         </SectionThreeColumn>
         <SectionThreeColumn>
           <SectionThreeCard>
-            <SectionThreeImage src={card} alt="Avatar" />
+            <SectionThreeImage src={card} alt="Avatar" loading="lazy" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
               <SectionThreeDescCard>
@@ -57,7 +57,7 @@ const SectionThree = () => {
         </SectionThreeColumn>
         <SectionThreeColumn>
           <SectionThreeCard>
-            <SectionThreeImage src={card} alt="Avatar" />
+            <SectionThreeImage src={card} alt="Avatar" loading="lazy" />
             <SectionThreeTextContainer>
               <SectionThreeTitleCard>John Doe</SectionThreeTitleCard>
               <SectionThreeDescCard>
