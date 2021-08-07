@@ -51,10 +51,11 @@ export const NavText = styled.div`
   padding-top: 2.5%;
   color: white;
   @media screen and (max-width: 960px) {
+    margin: auto;
     text-align: center;
-    padding-top: 10%;
-    padding-right: 2%;
-    width: 100%;
+    font-size: 0.9rem;
+    width: 80%;
+    padding: 10px;
   }
 `;
 
@@ -69,7 +70,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 70%);
     font-size: 1.8rem;
     cursor: pointer;
   }
