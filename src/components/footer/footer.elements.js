@@ -66,7 +66,6 @@ export const FooterSocialContainer = styled.ul`
   font-size: 1rem;
   font-weight: 500;
   margin: auto;
-  width: 50%;
   border: 3px solid green;
   padding: 10px;
 `;
