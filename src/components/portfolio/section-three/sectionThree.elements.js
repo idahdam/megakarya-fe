@@ -29,7 +29,7 @@ export const SectionThreeTestimonyContainer = styled.div`
 
 export const SectionThreeColumnContainer = styled.div`
   padding-left: 23.5%;
-  padding-top: 15%;
+  padding-top: 0%;
   width: 60%;
   margin: auto;
   @media screen and (max-width: 960px) {

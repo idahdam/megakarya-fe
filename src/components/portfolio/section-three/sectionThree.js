@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Carousel from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
+
 import {
   SectionThreeContainer,
   SectionThreeTitle,
@@ -41,32 +44,64 @@ const SectionThree = () => {
         <SectionThreeRow>
           {position ? (
             <>
-              <SectionThreeColumn>
-                <SectionThreeColumnContainer>
-                  <SectionThreeTitle>
-                    Theonaldo Vincentius Androdi
-                  </SectionThreeTitle>
-                  <SectionThreeJob>CEO of XYZ Company</SectionThreeJob>
-                  <SectionThreeLineTestimony />
-                  <SectionThreeDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipis elit. Sed
-                    lectus orci scelerisque volutpat. Enim, dolor dolor
-                    tincidunt et mollis egestas. Urna eu porttitor ultrices sed.
-                    Tellus urna porttitor a tristique ornare. Dolor.
-                  </SectionThreeDescription>
-                </SectionThreeColumnContainer>
-              </SectionThreeColumn>
-              <SectionThreeColumn>
-                <SectionThreeColumnContainerTwo>
-                  <SectionThreeColumnContainerImage>
-                    <SectionThreeColumnImage
-                      src={hero}
-                      alt="hero-one"
-                      loading="lazy"
-                    />
-                  </SectionThreeColumnContainerImage>
-                </SectionThreeColumnContainerTwo>
-              </SectionThreeColumn>
+              <Carousel plugins={["arrows", "infinite"]}>
+                <>
+                  <SectionThreeColumn>
+                    <SectionThreeColumnContainer>
+                      <SectionThreeTitle>
+                        Theonaldo Vincentius Androdi
+                      </SectionThreeTitle>
+                      <SectionThreeJob>CEO of XYZ Company</SectionThreeJob>
+                      <SectionThreeLineTestimony />
+                      <SectionThreeDescription>
+                        Lorem ipsum dolor sit amet, consectetur adipis elit. Sed
+                        lectus orci scelerisque volutpat. Enim, dolor dolor
+                        tincidunt et mollis egestas. Urna eu porttitor ultrices
+                        sed. Tellus urna porttitor a tristique ornare. Dolor.
+                      </SectionThreeDescription>
+                    </SectionThreeColumnContainer>
+                  </SectionThreeColumn>
+                  <SectionThreeColumn>
+                    <SectionThreeColumnContainerTwo>
+                      <SectionThreeColumnContainerImage>
+                        <SectionThreeColumnImage
+                          src={hero}
+                          alt="hero-one"
+                          loading="lazy"
+                        />
+                      </SectionThreeColumnContainerImage>
+                    </SectionThreeColumnContainerTwo>
+                  </SectionThreeColumn>
+                </>
+                <>
+                  <SectionThreeColumn>
+                    <SectionThreeColumnContainer>
+                      <SectionThreeTitle>
+                        Theonaldo Vincentius Androdi
+                      </SectionThreeTitle>
+                      <SectionThreeJob>CEO of XYZ Company</SectionThreeJob>
+                      <SectionThreeLineTestimony />
+                      <SectionThreeDescription>
+                        Lorem ipsum dolor sit amet, consectetur adipis elit. Sed
+                        lectus orci scelerisque volutpat. Enim, dolor dolor
+                        tincidunt et mollis egestas. Urna eu porttitor ultrices
+                        sed. Tellus urna porttitor a tristique ornare. Dolor.
+                      </SectionThreeDescription>
+                    </SectionThreeColumnContainer>
+                  </SectionThreeColumn>
+                  <SectionThreeColumn>
+                    <SectionThreeColumnContainerTwo>
+                      <SectionThreeColumnContainerImage>
+                        <SectionThreeColumnImage
+                          src={hero}
+                          alt="hero-one"
+                          loading="lazy"
+                        />
+                      </SectionThreeColumnContainerImage>
+                    </SectionThreeColumnContainerTwo>
+                  </SectionThreeColumn>
+                </>
+              </Carousel>
             </>
           ) : (
             <>
