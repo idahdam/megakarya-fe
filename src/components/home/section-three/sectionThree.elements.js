@@ -19,7 +19,7 @@ export const SectionThreeTitle = styled.div`
   font-weight: bold;
   font-size: 1.25rem;
   @media screen and (max-width: 960px) {
-    padding-left: 10%;
+    padding-left: 6%;
     padding-bottom: 5%;
     text-align: left;
   }
@@ -28,6 +28,9 @@ export const SectionThreeRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1% 9%;
+  @media screen and (max-width: 960px) {
+    padding: 1% 4.5%;
+  }
 `;
 
 export const SectionThreeCard = styled.div`

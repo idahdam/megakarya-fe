@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const SectionTwoContainer = styled.div`
   padding: 2.5% 20%;
   box-sizing: border-box;
+  @media screen and (max-width: 960px) {
+    padding: 10% 15%;
+  }
 `;
 
 export const SectionTwoRow = styled.div`

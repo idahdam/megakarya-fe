@@ -8,6 +8,8 @@ export const SectionTwoContainer = styled.div`
 export const SectionTwoThumbnail = styled.div`
   position: relative;
   display: inline-block;
+  min-width: 100%;
+  overflow: auto;
 `;
 export const SectionTwoImage = styled.img`
   display: block;
@@ -27,7 +29,7 @@ export const SectionTwoCaption = styled.div`
   color: white;
   @media screen and (max-width: 960px) {
     text-align: left;
-    transform: translate(-80%, -50%);
+    transform: translate(-85%, -50%);
   }
 `;
 

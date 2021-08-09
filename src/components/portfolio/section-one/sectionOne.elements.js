@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-export const SectionOneContainer = styled.div``;
+export const SectionOneContainer = styled.div`
+  @media screen and (max-width: 960px) {
+    margin-bottom: -0.25rem;
+  }
+`;
 
 export const SectionOneThumbnail = styled.div`
   position: relative;
   display: inline-block;
+  min-width: 100%;
 `;
 export const SectionOneImage = styled.img`
   display: block;
@@ -24,7 +29,7 @@ export const SectionOneCaption = styled.div`
   color: white;
   @media screen and (max-width: 960px) {
     text-align: left;
-    transform: translate(-80%, -30%);
+    transform: translate(-85%, -30%);
   }
 `;
 

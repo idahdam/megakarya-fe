@@ -39,9 +39,17 @@ export const SectionFourImageFirstRow = styled.img`
 export const SectionFourTextSecondRow = styled.div`
   color: white;
   padding: 12.5% 10%;
+  @media screen and (max-width: 960px) {
+    padding: 10% 7.5%;
+    padding-bottom: 5%;
+  }
 `;
 export const SectionFourTextFirstRow = styled.div`
   padding: 10%;
+  @media screen and (max-width: 960px) {
+    padding: 10% 7.5%;
+    padding-bottom: 5%;
+  }
 `;
 export const SectionFourImageSecondRow = styled.img`
   width: 85%;
@@ -77,6 +85,7 @@ export const SectionFourLink = styled(Link)`
   @media screen and (max-width: 960px) {
     background-color: #b01f24;
     font-size: 0.75rem;
+    margin-left: 0%;
     height: 0%;
   }
 `;

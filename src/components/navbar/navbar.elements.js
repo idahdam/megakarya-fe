@@ -86,6 +86,7 @@ export const NavMenu = styled.ul`
   font-size: 1rem;
   font-weight: 500;
   @media screen and (max-width: 960px) {
+    font-size: 1.5rem;
     padding-left: 0%;
     display: flex;
     text-align: center;
@@ -112,7 +113,7 @@ export const NavItem = styled.li`
     border-bottom: 2px solid white;
   }
   @media screen and (max-width: 960px) {
-    width: 25%;
+    width: 50%;
     &:hover {
       border-bottom: 2px solid #101522;
       transition: all 1s ease;
@@ -134,7 +135,7 @@ export const NavLinks = styled(Link)`
     width: 100%;
     display: table;
     &:hover {
-      color: #4b59f7;
+      color: #c4c4c4;
       transition: all 0.3s ease;
     }
   }
