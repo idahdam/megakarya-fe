@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const SectionTwoContainer = styled.div`
   padding: 2.5% 0%;
   margin-top: -1%;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   box-sizing: border-box;
 `;
 export const SectionTwoLine = styled.div``;
 export const SectionTwoTitle = styled.div`
   padding-left: 16%;
+  padding-bottom: 1%;
   font-weight: bold;
   font-size: 1.25rem;
   @media screen and (max-width: 960px) {
@@ -29,7 +30,7 @@ export const SectionTwoRow = styled.div`
 
 export const SectionTwoColumn = styled.div`
   flex: 20%;
-  margin: 20px 0%;
+  margin: 1% 0%;
   @media screen and (max-width: 960px) {
     flex: 10%;
     margin: 5px 0px;

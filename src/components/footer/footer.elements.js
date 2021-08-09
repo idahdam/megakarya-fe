@@ -42,3 +42,31 @@ export const FooterBold = styled.div`
   padding-top: 1%;
   color: white;
 `;
+
+export const FooterSocial = styled.li`
+  height: 30px;
+  width: 25px;
+  padding: 0 3.5%;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid transparent;
+`;
+
+export const FooterSocialEach = styled.div`
+  background-color: #c4c4c4;
+  padding-top: 15%;
+  border-radius: 50px;
+`;
+
+export const FooterSocialContainer = styled.ul`
+  width: 120%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+`;
