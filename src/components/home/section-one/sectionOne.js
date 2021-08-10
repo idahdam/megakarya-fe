@@ -18,10 +18,8 @@ const SectionOne = () => {
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setPosition(false);
-      console.log("mobile!");
     } else {
       setPosition(true);
-      console.log("desktop!");
     }
   };
 

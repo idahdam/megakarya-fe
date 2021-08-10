@@ -4,7 +4,21 @@ export const SectionThreeContainer = styled.div`
   padding: 2.5% 0%;
   box-sizing: border-box;
 `;
-export const SectionThreeLine = styled.span``;
+export const SectionThreeLine = styled.hr`
+  border: 0;
+  height: 3px;
+  margin: 0% 16%;
+  margin-bottom: 1%;
+  padding: 0% 5%;
+  background: #9f9f9f;
+  background: linear-gradient(to right, #b01f24 20%, #9f9f9f 20% 80%);
+  @media screen and (max-width: 960px) {
+    margin: 0% 6%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    background: linear-gradient(to right, #b01f24 10%, #9f9f9f 10% 80%);
+  }
+`;
 export const SectionThreeColumn = styled.div`
   flex: 20%;
   padding: 15px;
