@@ -8,12 +8,14 @@ import {
   FooterBold,
   FooterText,
   FooterRegular,
-  FooterSocial,
-  FooterSocialContainer,
-  FooterSocialEach,
+  FooterLink,
+  FooterColumnRight,
+  FooterFacebook,
+  FooterInstagram,
+  FooterYoutube,
+  FooterRowMobile,
 } from "./footer.elements";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import logo from "../../assets/navbar/logo2.png";
+import logo from "../../assets/footer/logo2.png";
 
 const Footer = () => {
   const [position, setPosition] = useState(true);
@@ -39,36 +41,37 @@ const Footer = () => {
           <FooterColumn>
             <FooterLogo src={logo} alt="logo" />
           </FooterColumn>
-          <FooterColumn>
+          <FooterColumnRight>
             <FooterText>
               <FooterBold>Contact Us</FooterBold>
               <FooterRegular>Sudirman, Jakarta, 15269</FooterRegular>
               <FooterRegular>+62 822 2222 1111</FooterRegular>
               <FooterRegular>example@corporate.com</FooterRegular>
+              <FooterLink href="https://facebook.com">
+                <FooterFacebook size={20} />
+              </FooterLink>
+              <FooterLink href="https://instagram.com">
+                <FooterInstagram size={20} />
+              </FooterLink>
+              <FooterLink href="https://youtube.com">
+                <FooterYoutube size={20} />
+              </FooterLink>
             </FooterText>
-          </FooterColumn>
+          </FooterColumnRight>
         </FooterRow>
       ) : (
         <IconContext.Provider value={{ color: "#101010" }}>
-          <FooterRow>
-            <FooterSocialContainer>
-              <FooterSocial>
-                <FooterSocialEach>
-                  <FaFacebook />
-                </FooterSocialEach>
-              </FooterSocial>
-              <FooterSocial>
-                <FooterSocialEach>
-                  <FaInstagram />
-                </FooterSocialEach>
-              </FooterSocial>
-              <FooterSocial>
-                <FooterSocialEach>
-                  <FaYoutube />
-                </FooterSocialEach>
-              </FooterSocial>
-            </FooterSocialContainer>
-          </FooterRow>
+          <FooterRowMobile>
+            <FooterLink href="https://facebook.com">
+              <FooterFacebook size={20} />
+            </FooterLink>
+            <FooterLink href="https://instagram.com">
+              <FooterInstagram size={20} />
+            </FooterLink>
+            <FooterLink href="https://youtube.com">
+              <FooterYoutube size={20} />
+            </FooterLink>
+          </FooterRowMobile>
         </IconContext.Provider>
       )}
     </FooterContainer>

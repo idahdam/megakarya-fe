@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { FaMagento } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
+import { FaTimes } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: #101010;
@@ -59,13 +59,17 @@ export const NavText = styled.div`
   }
 `;
 
-export const NavIcon = styled(FaMagento)`
-  margin-right: 0.5rem;
+// export const NavIcon = styled(FaMagento)`
+//   margin-right: 0.5rem;
+// `;
+export const NavCloseIcon = styled(FaTimes)`
+  stroke-width="1";
 `;
-
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 960px) {.
+    transition: 0.3s ease-in;
+    stroke-width="1";
     display: block;
     position: absolute;
     top: 0;
