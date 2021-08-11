@@ -12,8 +12,8 @@ import {
   SectionOneColumnContainerRectangleFront,
   SectionOneColumnContainerRectangleBack,
 } from "./sectionOne.elements";
-import hero from "../../../assets/main/hero.png";
-const SectionOne = () => {
+
+const SectionOne = ({ title, description, image }) => {
   const [position, setPosition] = useState(true);
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -37,15 +37,8 @@ const SectionOne = () => {
             {/* Desktop */}
             <SectionOneColumn>
               <SectionOneColumnContainer>
-                <SectionOneTitle>
-                  Lorem ipsum dolor sit amet, Consectetur.
-                </SectionOneTitle>
-                <SectionOneDescription>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </SectionOneDescription>
+                <SectionOneTitle>{title}</SectionOneTitle>
+                <SectionOneDescription>{description}</SectionOneDescription>
               </SectionOneColumnContainer>
             </SectionOneColumn>
             <SectionOneColumn>
@@ -53,7 +46,7 @@ const SectionOne = () => {
                 <SectionOneColumnContainerRectangleFront></SectionOneColumnContainerRectangleFront>
                 <SectionOneColumnContainerImage>
                   <SectionOneColumnImage
-                    src={hero}
+                    src={image}
                     alt="hero-one"
                     loading="lazy"
                   />
@@ -69,7 +62,7 @@ const SectionOne = () => {
               <SectionOneColumnContainerTwo>
                 <SectionOneColumnContainerRectangleFront></SectionOneColumnContainerRectangleFront>
                 <SectionOneColumnImage
-                  src={hero}
+                  src={image}
                   alt="hero-one"
                   loading="lazy"
                 />
@@ -78,14 +71,9 @@ const SectionOne = () => {
             <SectionOneColumn>
               <SectionOneColumnContainer>
                 <SectionOneTitle>
-                  Lorem ipsum dolor sit amet, Consectetur.
+                  <SectionOneTitle>{title}</SectionOneTitle>
                 </SectionOneTitle>
-                <SectionOneDescription>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </SectionOneDescription>
+                <SectionOneDescription>{description}</SectionOneDescription>
               </SectionOneColumnContainer>
             </SectionOneColumn>
           </>

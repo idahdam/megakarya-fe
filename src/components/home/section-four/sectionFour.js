@@ -17,7 +17,7 @@ import {
 } from "./sectionFour.elements";
 import office from "../../../assets/main/office.png";
 
-const SectionFour = () => {
+const SectionFour = ({ objectOne, objectTwo }) => {
   const [position, setPosition] = useState(true);
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -47,15 +47,13 @@ const SectionFour = () => {
             <SectionFourColumn>
               <SectionFourGreyColumn>
                 <SectionFourTextSecondRow>
-                  <SectionFourTitle>
-                    Product, Lorem ipsum dolor sit amet, consectetur elit.
-                  </SectionFourTitle>
+                  <SectionFourTitle>{objectOne.title}</SectionFourTitle>
                   <SectionFourDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Facilisi urna, eu, sit orci nulla malesuada nunc. Bibendum
-                    odio vel neque nisi velit. Aliquam pellentesque lobortis.
+                    {objectOne.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/product">LEARN MORE</SectionFourLink>
+                  <SectionFourLink to="/product">
+                    {objectOne.button_title}
+                  </SectionFourLink>
                 </SectionFourTextSecondRow>
               </SectionFourGreyColumn>
             </SectionFourColumn>
@@ -64,16 +62,13 @@ const SectionFour = () => {
             <SectionFourColumn>
               <SectionFourWhiteColumn>
                 <SectionFourTextFirstRow>
-                  <SectionFourTitle>
-                    Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </SectionFourTitle>
+                  <SectionFourTitle>{objectTwo.title}</SectionFourTitle>
                   <SectionFourDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Facilisi urna, eu, sit orci nulla malesuada nunc. Bibendum
-                    odio vel neque nisi velit. Aliquam pellentesque lobortis.
+                    {objectTwo.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/portfolio">LEARN MORE</SectionFourLink>
+                  <SectionFourLink to="/portfolio">
+                    {objectTwo.button_title}
+                  </SectionFourLink>
                 </SectionFourTextFirstRow>
               </SectionFourWhiteColumn>
             </SectionFourColumn>
@@ -102,15 +97,13 @@ const SectionFour = () => {
             <SectionFourColumn>
               <SectionFourGreyColumn>
                 <SectionFourTextSecondRow>
-                  <SectionFourTitle>
-                    Product, Lorem ipsum dolor sit amet, consectetur elit.
-                  </SectionFourTitle>
+                  <SectionFourTitle>{objectOne.title}</SectionFourTitle>
                   <SectionFourDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Facilisi urna, eu, sit orci nulla malesuada nunc. Bibendum
-                    odio vel neque nisi velit. Aliquam pellentesque lobortis.
+                    {objectOne.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/product">LEARN MORE</SectionFourLink>
+                  <SectionFourLink to="/product">
+                    {objectOne.button_title}
+                  </SectionFourLink>
                 </SectionFourTextSecondRow>
               </SectionFourGreyColumn>
             </SectionFourColumn>
@@ -129,16 +122,13 @@ const SectionFour = () => {
             <SectionFourColumn>
               <SectionFourWhiteColumn>
                 <SectionFourTextFirstRow>
-                  <SectionFourTitle>
-                    Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </SectionFourTitle>
+                  <SectionFourTitle>{objectTwo.title}</SectionFourTitle>
                   <SectionFourDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Facilisi urna, eu, sit orci nulla malesuada nunc. Bibendum
-                    odio vel neque nisi velit. Aliquam pellentesque lobortis.
+                    {objectTwo.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/portfolio">LEARN MORE</SectionFourLink>
+                  <SectionFourLink to="/portfolio">
+                    {objectTwo.button_title}
+                  </SectionFourLink>
                 </SectionFourTextFirstRow>
               </SectionFourWhiteColumn>
             </SectionFourColumn>

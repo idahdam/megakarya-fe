@@ -7,22 +7,14 @@ import {
   SectionOneTitle,
   SectionOneDescription,
 } from "./sectionOne.elements";
-import shipping from "../../../assets/product/shipping.png";
-const SectionOne = () => {
+const SectionOne = ({ hero }) => {
   return (
     <SectionOneContainer>
       <SectionOneThumbnail>
-        <SectionOneImage src={shipping} alt="vision" loading="lazy" />
+        <SectionOneImage src={hero.image.url} alt="vision" loading="lazy" />
         <SectionOneCaption>
-          <SectionOneTitle>
-            Lorem ipsum dolor sit amet, consectetu adipiscing elit.
-          </SectionOneTitle>
-          <SectionOneDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus
-            orci scelerisque volutpat. Enim, dolor dolor tincidunt et mollis
-            egestas. Urna eu porttitor ultrices sed. Tellus urna porttitor a
-            tristique ornare. Dolor.
-          </SectionOneDescription>
+          <SectionOneTitle>{hero.title}</SectionOneTitle>
+          <SectionOneDescription>{hero.description}</SectionOneDescription>
         </SectionOneCaption>
       </SectionOneThumbnail>
     </SectionOneContainer>

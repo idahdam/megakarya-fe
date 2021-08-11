@@ -7,23 +7,15 @@ import {
   SectionTwoCaption,
   SectionTwoTitle,
 } from "./sectionTwo.elements";
-import vision from "../../../assets/main/vision.png";
 
-const SectionTwo = () => {
+const SectionTwo = ({ title, description, image }) => {
   return (
     <SectionTwoContainer>
       <SectionTwoThumbnail>
-        <SectionTwoImage src={vision} alt="vision" loading="lazy" />
+        <SectionTwoImage src={image} alt="vision" loading="lazy" />
         <SectionTwoCaption>
-          <SectionTwoTitle>Vision</SectionTwoTitle>
-          <SectionTwoDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
-            integer tempus neque non eget tristique nunc nullam. Nulla
-            scelerisque consectetur nullam enim curabitur. Cras nam aenean
-            bibendum viverra tortor lacinia morbi sapien. Vitae eu, blandit est
-            et eu aenean. Vestibulum dignissim dui ut dignissim proin tempor,
-            eu, nulla.{" "}
-          </SectionTwoDescription>
+          <SectionTwoTitle>{title}</SectionTwoTitle>
+          <SectionTwoDescription>{description}</SectionTwoDescription>
         </SectionTwoCaption>
       </SectionTwoThumbnail>
     </SectionTwoContainer>

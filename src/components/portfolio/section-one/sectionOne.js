@@ -7,22 +7,14 @@ import {
   SectionOneTitle,
   SectionOneDescription,
 } from "./sectionOne.elements";
-import scenery from "../../../assets/portfolio/scenery.png";
-const SectionOne = () => {
+const SectionOne = ({ object }) => {
   return (
     <SectionOneContainer>
       <SectionOneThumbnail>
-        <SectionOneImage src={scenery} alt="vision" loading="lazy" />
+        <SectionOneImage src={object.image.url} alt="vision" loading="lazy" />
         <SectionOneCaption>
-          <SectionOneTitle>
-            Lorem ipsum dolor sit amet, consectetu adipiscing elit.
-          </SectionOneTitle>
-          <SectionOneDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus
-            orci scelerisque volutpat. Enim, dolor dolor tincidunt et mollis
-            egestas. Urna eu porttitor ultrices sed. Tellus urna porttitor a
-            tristique ornare. Dolor.
-          </SectionOneDescription>
+          <SectionOneTitle>{object.title}</SectionOneTitle>
+          <SectionOneDescription>{object.description}</SectionOneDescription>
         </SectionOneCaption>
       </SectionOneThumbnail>
     </SectionOneContainer>

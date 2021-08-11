@@ -11,13 +11,31 @@ import {
   SectionTwoButtonCard,
   SectionTwoPriceCard,
 } from "./sectionTwo.elements";
-import card from "../../../assets/main/card.png";
 
-const SectionTwo = () => {
+const SectionTwo = ({ products }) => {
   return (
     <SectionTwoContainer>
       <SectionTwoRow>
-        <SectionTwoColumn>
+        {products.map((product, index) => {
+          return (
+            <SectionTwoColumn>
+              <SectionTwoCard>
+                <SectionTwoImage
+                  src={product.image.url}
+                  alt="image"
+                  loading="lazy"
+                />
+                <SectionTwoTextContainer>
+                  <SectionTwoTitleCard>{product.name}</SectionTwoTitleCard>
+                  <SectionTwoDescCard>{product.description}</SectionTwoDescCard>
+                  <SectionTwoPriceCard>Rp{product.price}</SectionTwoPriceCard>
+                  <SectionTwoButtonCard>OFFER</SectionTwoButtonCard>
+                </SectionTwoTextContainer>
+              </SectionTwoCard>
+            </SectionTwoColumn>
+          );
+        })}
+        {/* <SectionTwoColumn>
           <SectionTwoCard>
             <SectionTwoImage src={card} alt="image" loading="lazy" />
             <SectionTwoTextContainer>
@@ -100,7 +118,7 @@ const SectionTwo = () => {
               <SectionTwoButtonCard>OFFER</SectionTwoButtonCard>
             </SectionTwoTextContainer>
           </SectionTwoCard>
-        </SectionTwoColumn>
+        </SectionTwoColumn> */}
       </SectionTwoRow>
     </SectionTwoContainer>
   );

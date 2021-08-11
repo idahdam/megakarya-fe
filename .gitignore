@@ -25,3 +25,4 @@ yarn-error.log*
 # misc
 *.prettierrc
 *.vscode
+*.rest

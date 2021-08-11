@@ -65,6 +65,8 @@ export const SectionThreeTextContainer = styled.div`
 
 export const SectionThreeImage = styled.img`
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 `;
 
 export const SectionThreeDescCard = styled.div`

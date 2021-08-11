@@ -11,15 +11,33 @@ import {
   SectionThreeDescCard,
   SectionThreeTitleCard,
 } from "./sectionThree.elements";
-import card from "../../../assets/main/card.png";
 
-const SectionThree = () => {
+const SectionThree = ({ objects }) => {
   return (
     <SectionThreeContainer>
       <SectionThreeLine></SectionThreeLine>
       <SectionThreeTitle>What We Do?</SectionThreeTitle>
       <SectionThreeRow>
-        <SectionThreeColumn>
+        {objects.map((object, index) => {
+          return (
+            <SectionThreeColumn>
+              <SectionThreeCard>
+                <SectionThreeImage
+                  src={object.image.url}
+                  alt="Avatar"
+                  loading="lazy"
+                />
+                <SectionThreeTextContainer>
+                  <SectionThreeTitleCard>{object.title}</SectionThreeTitleCard>
+                  <SectionThreeDescCard>
+                    {object.description}
+                  </SectionThreeDescCard>
+                </SectionThreeTextContainer>
+              </SectionThreeCard>
+            </SectionThreeColumn>
+          );
+        })}
+        {/* <SectionThreeColumn>
           <SectionThreeCard>
             <SectionThreeImage src={card} alt="Avatar" loading="lazy" />
             <SectionThreeTextContainer>
@@ -66,7 +84,7 @@ const SectionThree = () => {
               </SectionThreeDescCard>
             </SectionThreeTextContainer>
           </SectionThreeCard>
-        </SectionThreeColumn>
+        </SectionThreeColumn> */}
       </SectionThreeRow>
     </SectionThreeContainer>
   );
