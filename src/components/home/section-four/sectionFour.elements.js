@@ -131,6 +131,7 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
   display: flex;
   background-color: #b01f24;
   max-width: 1366px;
+  display: none;
   @media screen and (max-width: 960px) {
     margin: 0 auto;
     top: 1.25rem;
