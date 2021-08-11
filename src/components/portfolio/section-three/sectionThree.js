@@ -60,62 +60,33 @@ const SectionThree = ({ object }) => {
               },
             ]}
           >
-            <>
-              <SectionThreeColumn>
-                <SectionThreeColumnContainer>
-                  <SectionThreeTitle>
-                    Theonaldo Vincentius Androdi
-                  </SectionThreeTitle>
-                  <SectionThreeJob>CEO of XYZ Company</SectionThreeJob>
-                  <SectionThreeLineTestimony />
-                  <SectionThreeDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipis elit. Sed
-                    lectus orci scelerisque volutpat. Enim, dolor dolor
-                    tincidunt et mollis egestas. Urna eu porttitor ultrices sed.
-                    Tellus urna porttitor a tristique ornare. Dolor.
-                  </SectionThreeDescription>
-                </SectionThreeColumnContainer>
-              </SectionThreeColumn>
-              <SectionThreeColumn>
-                <SectionThreeColumnContainerTwo>
-                  <SectionThreeColumnContainerImage>
-                    <SectionThreeColumnImage
-                      src={hero}
-                      alt="hero-one"
-                      loading="lazy"
-                    />
-                  </SectionThreeColumnContainerImage>
-                </SectionThreeColumnContainerTwo>
-              </SectionThreeColumn>
-            </>
-            <>
-              <SectionThreeColumn>
-                <SectionThreeColumnContainer>
-                  <SectionThreeTitle>
-                    Theonaldo Vincentius Androdi
-                  </SectionThreeTitle>
-                  <SectionThreeJob>CEO of XYZ Company</SectionThreeJob>
-                  <SectionThreeLineTestimony />
-                  <SectionThreeDescription>
-                    Lorem ipsum dolor sit amet, consectetur adipis elit. Sed
-                    lectus orci scelerisque volutpat. Enim, dolor dolor
-                    tincidunt et mollis egestas. Urna eu porttitor ultrices sed.
-                    Tellus urna porttitor a tristique ornare. Dolor.
-                  </SectionThreeDescription>
-                </SectionThreeColumnContainer>
-              </SectionThreeColumn>
-              <SectionThreeColumn>
-                <SectionThreeColumnContainerTwo>
-                  <SectionThreeColumnContainerImage>
-                    <SectionThreeColumnImage
-                      src={hero}
-                      alt="hero-one"
-                      loading="lazy"
-                    />
-                  </SectionThreeColumnContainerImage>
-                </SectionThreeColumnContainerTwo>
-              </SectionThreeColumn>
-            </>
+            {object.map((data, index) => {
+              return (
+                <>
+                  <SectionThreeColumn>
+                    <SectionThreeColumnContainer>
+                      <SectionThreeTitle>{data.name}</SectionThreeTitle>
+                      <SectionThreeJob>{data.position}</SectionThreeJob>
+                      <SectionThreeLineTestimony />
+                      <SectionThreeDescription>
+                        {data.testimony}
+                      </SectionThreeDescription>
+                    </SectionThreeColumnContainer>
+                  </SectionThreeColumn>
+                  <SectionThreeColumn>
+                    <SectionThreeColumnContainerTwo>
+                      <SectionThreeColumnContainerImage>
+                        <SectionThreeColumnImage
+                          src={data.photo.url}
+                          alt="hero-one"
+                          loading="lazy"
+                        />
+                      </SectionThreeColumnContainerImage>
+                    </SectionThreeColumnContainerTwo>
+                  </SectionThreeColumn>
+                </>
+              );
+            })}
           </Carousel>
         </SectionThreeRow>
       </SectionThreeTestimonyContainer>
