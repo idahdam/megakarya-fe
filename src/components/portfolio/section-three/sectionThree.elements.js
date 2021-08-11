@@ -6,6 +6,11 @@ export const SectionThreeContainer = styled.div`
   margin-top: -1%;
   margin-bottom: 0;
   box-sizing: border-box;
+
+  z-index: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 960px) {
     margin-bottom: -3%;
     padding-top: 10%;

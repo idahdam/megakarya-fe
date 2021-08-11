@@ -4,15 +4,22 @@ import styled from "styled-components";
 export const SectionOneContainer = styled.div`
   width: 100%;
   margin-bottom: -2rem;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-right: 50px;
+  // padding-left: 50px;
   @media screen and (max-width: 960px) {
     padding-bottom: 10%;
   }
 `;
 
 export const SectionOneColumnContainer = styled.div`
-  padding-left: 32%;
+  padding-left: 20%;
   padding-top: 15%;
-  width: 60%;
+  width: 70%;
   @media screen and (max-width: 960px) {
     padding: 5% 5%;
     font-size: 2rem;
@@ -107,7 +114,7 @@ export const SectionOneColumnContainerImage = styled.div`
   z-index: -1;
 `;
 export const SectionOneColumnContainerRectangleFront = styled.div`
-  height: 2.5rem;
+  height: 3rem;
   position: relative;
   top: 25em;
   left: 5rem;

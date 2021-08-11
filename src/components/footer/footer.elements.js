@@ -3,10 +3,13 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 // import { Container } from "../../globalStyles";
 
 export const FooterContainer = styled.div`
-  background-color: #101010;
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-left: 10%;
+  z-index: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #101010;
   @media screen and (max-width: 960px) {
     width: auto;
     padding-top: 1%;
@@ -17,6 +20,10 @@ export const FooterContainer = styled.div`
 
 export const FooterRow = styled.div`
   display: flex;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
   @media screen and (max-width: 960px) {
     width: auto;
     margin: auto;

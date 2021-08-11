@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const SectionFourContainer = styled.div`
+  z-index: 1;
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 960px) {
     padding-bottom: 10%;
   }
@@ -121,7 +123,7 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
   position: relative;
   top: 3.75em;
-  left: 20rem;
+  left: 18rem;
   width: 19rem;
   display: flex;
   background-color: #b01f24;

@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const SectionTwoContainer = styled.div`
   padding: 2.5% 10%;
   box-sizing: border-box;
+
+  z-index: 1;
+  width: 100%;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 50px;
+  padding-left: 50px;
   @media screen and (max-width: 960px) {
     padding: 10% 15%;
   }

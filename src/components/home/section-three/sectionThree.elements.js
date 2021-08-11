@@ -3,13 +3,18 @@ import styled from "styled-components";
 export const SectionThreeContainer = styled.div`
   padding: 2.5% 0%;
   box-sizing: border-box;
+  z-index: 1;
+  width: 100%;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 export const SectionThreeLine = styled.hr`
   border: 0;
   height: 3px;
-  margin: 0% 16%;
+  margin: 0% 15%;
   margin-bottom: 1%;
-  padding: 0% 5%;
+  padding: 0% 0%;
   background: #9f9f9f;
   background: linear-gradient(to right, #b01f24 20%, #9f9f9f 20% 80%);
   @media screen and (max-width: 960px) {
@@ -29,7 +34,7 @@ export const SectionThreeColumn = styled.div`
   }
 `;
 export const SectionThreeTitle = styled.div`
-  padding-left: 16%;
+  padding-left: 15%;
   font-weight: bold;
   font-size: 1.5rem;
   @media screen and (max-width: 960px) {
@@ -42,7 +47,7 @@ export const SectionThreeTitle = styled.div`
 export const SectionThreeRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 1% 9%;
+  padding: 1% 7.5%;
   @media screen and (max-width: 960px) {
     padding: 1% 4.5%;
   }

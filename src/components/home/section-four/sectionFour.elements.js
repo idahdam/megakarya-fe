@@ -2,8 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const SectionFourContainer = styled.div`
-  padding: 0% 10%;
   padding-bottom: 2.5%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 960px) {
     padding: 0%;
   }
@@ -23,7 +27,6 @@ export const SectionFourColumn = styled.div`
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-
   @media screen and (max-width: 960px) {
   }
 `;

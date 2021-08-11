@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const SectionTwoContainer = styled.div`
+  z-index: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 960px) {
     padding-top: 5%;
   }
