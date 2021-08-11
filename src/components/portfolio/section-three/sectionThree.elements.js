@@ -30,7 +30,7 @@ export const SectionThreeLine = styled.div`
   left: 15%;
   z-index: -1;
   position: absolute;
-  background: linear-gradient(to bottom, #c4c4c4 30%, red 30%);
+  background: linear-gradient(to bottom, #9f9f9f 25%, #b01f24 25%);
   @media screen and (max-width: 960px) {
     left: 11%;
     bottom: -45rem;

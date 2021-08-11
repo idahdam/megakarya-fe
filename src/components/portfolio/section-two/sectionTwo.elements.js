@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ImageOverlay } from "react-image-overlay-effect";
 
 export const SectionTwoContainer = styled.div`
   padding: 2.5% 0%;
@@ -38,6 +39,7 @@ export const SectionTwoRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 0 10%;
+  max-width: 1366px;
   @media screen and (max-width: 960px) {
     padding: 0 9%;
   }
@@ -52,9 +54,13 @@ export const SectionTwoColumn = styled.div`
   }
 `;
 
-export const SectionTwoItemImage = styled.img`
-  width: 190px;
-  height: 110px;
+export const SectionTwoClientName = styled.p`
+  color: white;
+`;
+
+export const SectionTwoItemImage = styled(ImageOverlay)`
+  width: 12.5rem;
+  height: 7.5rem;
   object-fit: cover;
   display: block;
   margin-left: auto;

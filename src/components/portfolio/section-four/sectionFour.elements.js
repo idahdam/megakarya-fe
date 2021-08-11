@@ -64,7 +64,7 @@ export const SectionFourDescription = styled.div`
 `;
 
 export const SectionFourColumnImage = styled.img`
-  padding-left: 7%;
+  padding-left: 20%;
   padding-top: 5%;
   max-width: 75%;
   height: 350px;
@@ -112,10 +112,10 @@ export const SectionFourColumnContainerRectangleBack = styled.div`
 `;
 
 export const SectionFourColumnContainerImage = styled.div`
-  padding-left: 15%;
   width: 100%;
   position: relative;
   z-index: -1;
+  position: relative;
 `;
 export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;

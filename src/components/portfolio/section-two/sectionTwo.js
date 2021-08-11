@@ -6,56 +6,30 @@ import {
   SectionTwoRow,
   SectionTwoColumn,
   SectionTwoItemImage,
-  SectionTwoItemImageEmpty,
+  SectionTwoClientName,
 } from "./sectionTwo.elements";
-import hero from "../../../assets/main/hero.png";
 
 const SectionTwo = ({ object }) => {
-  // if (object.length === 0) return null;
+  if (object.length === 0) return null;
   return (
     <SectionTwoContainer>
       <SectionTwoLine></SectionTwoLine>
       <SectionTwoTitle>Our Clients</SectionTwoTitle>
       <SectionTwoRow>
-        <SectionTwoColumn>
-          <SectionTwoItemImage src={hero} />
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
-        <SectionTwoColumn>
-          {/* <SectionTwoItemImage src={hero} /> */}
-          <SectionTwoItemImageEmpty></SectionTwoItemImageEmpty>
-        </SectionTwoColumn>
+        {object.map((data, index) => {
+          return (
+            <SectionTwoColumn>
+              <SectionTwoItemImage
+                src={data.company_logo.url}
+                description={
+                  <SectionTwoClientName>
+                    {data.company_name}
+                  </SectionTwoClientName>
+                }
+              />
+            </SectionTwoColumn>
+          );
+        })}
       </SectionTwoRow>
     </SectionTwoContainer>
   );
