@@ -15,7 +15,6 @@ import {
   SectionFourGreyColumnImage,
   SectionFourColumnContainerRectangleFront,
 } from "./sectionFour.elements";
-import office from "../../../assets/main/office.png";
 
 const SectionFour = ({ objectOne, objectTwo }) => {
   const [position, setPosition] = useState(true);
@@ -39,7 +38,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
           <SectionFourRow>
             <SectionFourColumn>
               <SectionFourImageFirstRow
-                src={office}
+                src={objectOne.image.url}
                 alt="office"
                 loading="lazy"
               />
@@ -75,7 +74,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
             <SectionFourColumn>
               <SectionFourGreyColumn>
                 <SectionFourImageSecondRow
-                  src={office}
+                  src={objectTwo.image.url}
                   alt="office"
                   loading="lazy"
                 />
@@ -89,7 +88,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
           <SectionFourRow>
             <SectionFourColumn>
               <SectionFourImageFirstRow
-                src={office}
+                src={objectOne.image.url}
                 alt="office"
                 loading="lazy"
               />
@@ -113,7 +112,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
               <SectionFourGreyColumnImage>
                 <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
                 <SectionFourImageSecondRow
-                  src={office}
+                  src={objectOne.image.url}
                   alt="office"
                   loading="lazy"
                 />

@@ -21,6 +21,7 @@ export const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await homeService.getAllHomeComponents();
+      console.log(response.data);
       setData(response.data);
     };
 

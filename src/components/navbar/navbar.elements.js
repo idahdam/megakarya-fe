@@ -20,6 +20,10 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1366px;
   ${Container}
 `;
 
@@ -45,13 +49,17 @@ export const NavLogo = styled(Link)`
 `;
 
 export const NavText = styled.div`
-  width: 62.5%;
+  width: 70%;
   font-weight: bold;
   font-size: 1rem;
-  padding-top: 2.5%;
   color: white;
+  height: 100px;
+  padding: 0 -5%;
+  line-height: 75px;
+  text-align: left;
   @media screen and (max-width: 960px) {
     margin: auto;
+    line-height: 57.5 px;
     text-align: center;
     font-size: 0.9rem;
     width: 80%;

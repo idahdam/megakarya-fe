@@ -14,7 +14,7 @@ export const SectionTwoThumbnail = styled.div`
 export const SectionTwoImage = styled.img`
   display: block;
   width: 100%;
-  height: 420px;
+  height: auto;
   @media screen and (max-width: 960px) {
     object-fit: cover;
     height: 500px;

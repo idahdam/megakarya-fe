@@ -38,14 +38,18 @@ export const SectionFourImageFirstRow = styled.img`
 `;
 export const SectionFourTextSecondRow = styled.div`
   color: white;
-  padding: 12.5% 10%;
+  padding: 15% 10%;
+  height: 49%;
+  position: relative;
   @media screen and (max-width: 960px) {
     padding: 10% 7.5%;
     padding-bottom: 5%;
   }
 `;
 export const SectionFourTextFirstRow = styled.div`
-  padding: 10%;
+  padding: 15% 10%;
+  height: 49%;
+  position: relative;
   @media screen and (max-width: 960px) {
     padding: 10% 7.5%;
     padding-bottom: 5%;
@@ -53,6 +57,7 @@ export const SectionFourTextFirstRow = styled.div`
 `;
 export const SectionFourImageSecondRow = styled.img`
   width: 85%;
+  padding-bottom: 7.5%;
   @media screen and (max-width: 960px) {
     display: block;
     width: 85%;
@@ -90,10 +95,17 @@ export const SectionFourLink = styled(Link)`
   }
 `;
 
-export const SectionFourWhiteColumn = styled.div``;
+export const SectionFourWhiteColumn = styled.div`
+  height: 100%;
+  margin: auto;
+  width: 100%;
+`;
 export const SectionFourGreyColumn = styled.div`
   background-color: #404040;
   height: 100%;
+  margin: auto;
+  padding-bottom: -1%;
+  width: 100%;
   @media screen and (max-width: 960px) {
     background-color: #404040;
     height: 0%;
@@ -113,13 +125,12 @@ export const SectionFourGreyColumnImage = styled.div`
 
 export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
-  position: relative;
-  bottom: 24em;
-  left: 10rem;
-  width: 30rem;
+  position: static;
+  left: 25%;
+  width: 25rem;
   display: flex;
   background-color: #b01f24;
-  z-index: 1;
+  max-width: 1366px;
   @media screen and (max-width: 960px) {
     margin: 0 auto;
     top: 1.25rem;

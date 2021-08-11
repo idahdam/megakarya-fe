@@ -13,9 +13,8 @@ import {
   SectionFourColumnContainerRectangleBack,
   SectionFourLink,
 } from "./sectionFour.elements";
-import hero from "../../../assets/main/hero.png";
 
-const SectionFour = () => {
+const SectionFour = ({ object }) => {
   const [position, setPosition] = useState(true);
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -42,7 +41,7 @@ const SectionFour = () => {
                 <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
                 <SectionFourColumnContainerImage>
                   <SectionFourColumnImage
-                    src={hero}
+                    src={object.image.url}
                     alt="hero-one"
                     loading="lazy"
                   />
@@ -52,14 +51,9 @@ const SectionFour = () => {
             </SectionFourColumn>
             <SectionFourColumn>
               <SectionFourColumnContainer>
-                <SectionFourTitle>
-                  Product Lorem, Ipsum Sit Dolor
-                </SectionFourTitle>
+                <SectionFourTitle>{object.title}</SectionFourTitle>
                 <SectionFourDescription>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {object.description}
                 </SectionFourDescription>
                 <SectionFourLink to="/product">CONTACT US</SectionFourLink>
               </SectionFourColumnContainer>
@@ -72,7 +66,7 @@ const SectionFour = () => {
               <SectionFourColumnContainerTwo>
                 <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
                 <SectionFourColumnImage
-                  src={hero}
+                  src={object.image.url}
                   alt="hero-one"
                   loading="lazy"
                 />
@@ -81,14 +75,9 @@ const SectionFour = () => {
             </SectionFourColumn>
             <SectionFourColumn>
               <SectionFourColumnContainer>
-                <SectionFourTitle>
-                  Product Lorem, Ipsum Sit Dolor
-                </SectionFourTitle>
+                <SectionFourTitle>{object.title}</SectionFourTitle>
                 <SectionFourDescription>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {object.description}
                 </SectionFourDescription>
                 <SectionFourLink to="/product">CONTACT US</SectionFourLink>
               </SectionFourColumnContainer>

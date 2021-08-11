@@ -37,9 +37,9 @@ const Portfolio = () => {
   return (
     <>
       <SectionOne object={data.HeroPortfolio} />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
+      <SectionTwo object={data.client} />
+      <SectionThree object={data.testimony} />
+      <SectionFour object={data.FooterHero} />
     </>
   );
 };
