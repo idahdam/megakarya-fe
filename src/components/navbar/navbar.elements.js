@@ -24,7 +24,10 @@ export const NavbarContainer = styled(Container)`
   width: 100%;
   padding: 0 24px;
   max-width: 1366px;
-  ${Container}
+  @media screen and (max-width: 960px) {
+    padding: 0;
+    width: 65%;
+  }
 `;
 
 export const NavImg = styled.img`
@@ -59,7 +62,8 @@ export const NavText = styled.div`
   text-align: left;
   @media screen and (max-width: 960px) {
     margin: auto;
-    line-height: 57.5 px;
+    padding: 0 2%;
+    line-height: 57.5px;
     text-align: center;
     font-size: 0.9rem;
     width: 80%;

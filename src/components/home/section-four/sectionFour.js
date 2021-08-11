@@ -73,6 +73,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
             </SectionFourColumn>
             <SectionFourColumn>
               <SectionFourGreyColumn>
+                <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
                 <SectionFourImageSecondRow
                   src={objectTwo.image.url}
                   alt="office"
@@ -81,7 +82,6 @@ const SectionFour = ({ objectOne, objectTwo }) => {
               </SectionFourGreyColumn>
             </SectionFourColumn>
           </SectionFourRow>
-          <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
         </SectionFourContainer>
       ) : (
         <SectionFourContainer>
