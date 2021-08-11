@@ -51,7 +51,7 @@ export const SectionFourTextFirstRow = styled.div`
   height: 49%;
   position: relative;
   @media screen and (max-width: 960px) {
-    padding: 10% 7.5%;
+    padding: 0% 7.5%;
     padding-bottom: 5%;
   }
 `;
@@ -132,12 +132,12 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
   z-index: 1;
   background-color: #b01f24;
   @media screen and (max-width: 960px) {
-    margin: 0 auto;
-    top: 1.25rem;
-    height: 2rem;
-    bottom: 5rem;
-    left: 5rem;
-    width: 10rem;
-    display: block;
+    height: 2.5rem;
+    position: static;
+    left: 40%;
+    width: 13rem;
+    position: absolute;
+    z-index: 1;
+    background-color: #b01f24;
   }
 `;
