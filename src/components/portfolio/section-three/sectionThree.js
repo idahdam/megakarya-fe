@@ -20,7 +20,6 @@ import {
   SectionThreeJob,
   SectionThreeCarouselButton,
 } from "./sectionThree.elements";
-import hero from "../../../assets/main/hero.png";
 const SectionThree = ({ object }) => {
   if (object.length === 0) return null;
   return (
