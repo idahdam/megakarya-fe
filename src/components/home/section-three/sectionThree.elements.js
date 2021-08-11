@@ -31,8 +31,9 @@ export const SectionThreeColumn = styled.div`
 export const SectionThreeTitle = styled.div`
   padding-left: 16%;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   @media screen and (max-width: 960px) {
+    font-size: 1.1rem;
     padding-left: 6%;
     padding-bottom: 5%;
     text-align: left;
@@ -67,14 +68,21 @@ export const SectionThreeImage = styled.img`
   width: 100%;
   height: 250px;
   object-fit: cover;
+  @media screen and (max-width: 960px) {
+    height: 150px;
+  }
 `;
 
 export const SectionThreeDescCard = styled.div`
   text-align: center;
-  font-weight: 400;
-  font-size: 1rem;
+  color: grey;
+  font-weight: 500;
+  font-size: 1.1rem;
   padding-top: 1.5%;
   padding-bottom: 3%;
+  @media screen and (max-width: 960px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const SectionTwoPriceCard = styled.div``;
@@ -84,5 +92,8 @@ export const SectionThreeTitleCard = styled.div`
   padding-bottom: 1.5%;
   text-align: center;
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  @media screen and (max-width: 960px) {
+    font-size: 1.1rem;
+  }
 `;

@@ -41,6 +41,7 @@ export const NavImg = styled.img`
 export const NavLogo = styled(Link)`
   color: #fff;
   width: 10%;
+  margin-left: 3%;
   margin-bottom: 0rem;
   justify-self: flex-start;
   cursor: pointer;
@@ -48,11 +49,12 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   @media screen and (max-width: 960px) {
+    margin-left: 0%;
   }
 `;
 
 export const NavText = styled.div`
-  width: 70%;
+  width: 62.5%;
   font-weight: bold;
   font-size: 1rem;
   color: white;
@@ -66,7 +68,7 @@ export const NavText = styled.div`
     line-height: 57.5px;
     text-align: center;
     font-size: 0.9rem;
-    width: 80%;
+    width: 100%;
     padding: 10px;
   }
 `;

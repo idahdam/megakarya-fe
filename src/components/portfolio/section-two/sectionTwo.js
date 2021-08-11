@@ -11,7 +11,7 @@ import {
 import hero from "../../../assets/main/hero.png";
 
 const SectionTwo = ({ object }) => {
-  if (object.length === 0) return null;
+  // if (object.length === 0) return null;
   return (
     <SectionTwoContainer>
       <SectionTwoLine></SectionTwoLine>

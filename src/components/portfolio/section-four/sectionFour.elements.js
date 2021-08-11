@@ -11,7 +11,7 @@ export const SectionFourContainer = styled.div`
 `;
 
 export const SectionFourColumnContainer = styled.div`
-  padding-left: 5%;
+  padding-left: 10%;
   padding-top: 15%;
   width: 60%;
   @media screen and (max-width: 960px) {
@@ -54,16 +54,17 @@ export const SectionFourDescription = styled.div`
   text-align: left;
   font-size: 1rem;
   padding-top: 1%;
+  font-weight: 500;
   padding-bottom: 5%;
   @media screen and (max-width: 960px) {
     padding-bottom: 5%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 100%;
   }
 `;
 
 export const SectionFourColumnImage = styled.img`
-  padding-left: 2.5%;
+  padding-left: 7%;
   padding-top: 5%;
   max-width: 75%;
   height: 350px;
@@ -96,7 +97,7 @@ export const SectionFourColumnContainerRectangleBack = styled.div`
   width: 15rem;
   margin-top: -20rem;
   height: 36rem;
-  left: 12.5rem;
+  left: 15rem;
   bottom: 10rem;
   margin-bottom: -10rem;
   background-color: #cfcfcf;
@@ -120,7 +121,7 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
   position: relative;
   top: 3.75em;
-  left: 17.5rem;
+  left: 20rem;
   width: 19rem;
   display: flex;
   background-color: #b01f24;
@@ -141,9 +142,10 @@ export const SectionFourLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.875rem;
   @media screen and (max-width: 960px) {
     background-color: #b01f24;
+    padding: 10px 15px;
     font-size: 0.75rem;
     height: 0%;
   }

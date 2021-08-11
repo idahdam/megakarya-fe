@@ -34,6 +34,7 @@ export const SectionOneDescription = styled.div`
   width: 60%;
   @media screen and (max-width: 960px) {
     width: 150%;
+    font-size: 0.9rem;
   }
 `;
 export const SectionOneTitle = styled.div`

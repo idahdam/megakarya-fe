@@ -50,10 +50,13 @@ export const SectionOneTitle = styled.div`
 `;
 export const SectionOneDescription = styled.div`
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 1%;
+  font-weight: 500;
   @media screen and (max-width: 960px) {
-    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 1%;
+    font-size: 0.9rem;
     width: 100%;
   }
 `;

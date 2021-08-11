@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionTwoContainer = styled.div`
-  padding: 2.5% 20%;
+  padding: 2.5% 10%;
   box-sizing: border-box;
   @media screen and (max-width: 960px) {
     padding: 10% 15%;
@@ -38,7 +38,7 @@ export const SectionTwoImage = styled.img`
 `;
 
 export const SectionTwoTextContainer = styled.div`
-  padding: 2px 16px;
+  padding: 3% 7.5%;
 `;
 
 export const SectionTwoTitleCard = styled.div`
@@ -46,31 +46,43 @@ export const SectionTwoTitleCard = styled.div`
   padding-bottom: 1.5%;
   text-align: left;
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  @media screen and (max-width: 960px) {
+    font-size: 1.125rem;
+  }
 `;
 
 export const SectionTwoDescCard = styled.div`
   text-align: left;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   padding-top: 1.5%;
   padding-bottom: 3%;
+  @media screen and (max-width: 960px) {
+    font-size: 0.9rem;
+  }
 `;
 export const SectionTwoPriceCard = styled.div`
   padding-bottom: 5%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  @media screen and (max-width: 960px) {
+    font-size: 0.9rem;
+  }
 `;
 export const SectionTwoButtonCard = styled.button`
   background-color: #40ac3e;
   border: none;
   color: white;
   margin-bottom: 5%;
-  padding: 15px 20px;
+  padding: 15px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.875rem;
   cursor: pointer;
   @media screen and (max-width: 960px) {
+    padding: 10px 20px;
     background-color: #40ac3e;
     font-size: 0.75rem;
     height: 0%;

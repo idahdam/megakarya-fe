@@ -2,25 +2,41 @@ import styled from "styled-components";
 
 export const SectionThreeContainer = styled.div`
   padding: 2.5% 0%;
+  padding-top: 5%;
   margin-top: -1%;
   margin-bottom: 0;
   box-sizing: border-box;
   @media screen and (max-width: 960px) {
     margin-bottom: -3%;
+    padding-top: 10%;
   }
 `;
 export const SectionThreeTitleMain = styled.div`
-  padding-left: 16%;
+  padding-left: 17.5%;
   padding-bottom: 1%;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   @media screen and (max-width: 960px) {
-    padding-left: 6%;
-    padding-bottom: 5%;
+    font-size: 1.1rem;
+    padding-left: 15%;
+    padding-bottom: 3 %;
     text-align: left;
   }
 `;
-export const SectionThreeLine = styled.div``;
+export const SectionThreeLine = styled.div`
+  width: 3px;
+  bottom: -25rem;
+  height: 100px;
+  left: 15%;
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(to bottom, #c4c4c4 30%, red 30%);
+  @media screen and (max-width: 960px) {
+    left: 11%;
+    bottom: -45rem;
+  }
+`;
+
 export const SectionThreeTestimonyContainer = styled.div`
   background-color: #e8e8e8;
   height: 100%;
@@ -72,7 +88,10 @@ export const SectionThreeTitle = styled.div`
 `;
 
 export const SectionThreeJob = styled.div`
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  @media screen and (max-width: 960px) {
+  }
 `;
 export const SectionThreeLineTestimony = styled.hr`
   background-color: #707070;
@@ -82,13 +101,15 @@ export const SectionThreeLineTestimony = styled.hr`
   border: 0;
   width: 15%;
 `;
+
 export const SectionThreeDescription = styled.div`
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 105%;
   color: #404040;
+  font-weight: 500;
   @media screen and (max-width: 960px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-bottom: 5%;
     width: 100%;
   }

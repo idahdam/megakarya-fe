@@ -34,7 +34,10 @@ export const SectionTwoCaption = styled.div`
 `;
 
 export const SectionTwoDescription = styled.div`
+  font-size: 1.1rem;
+  width: 100%;
   @media screen and (max-width: 960px) {
+    font-size: 0.9rem;
     text-align: left;
     width: 150%;
   }
@@ -45,6 +48,7 @@ export const SectionTwoTitle = styled.div`
   padding-bottom: 3%;
   @media screen and (max-width: 960px) {
     font-size: 1.5rem;
+    margin-bottom: 5%;
     text-align: left;
   }
 `;

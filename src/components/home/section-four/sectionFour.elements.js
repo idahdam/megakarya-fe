@@ -38,7 +38,8 @@ export const SectionFourImageFirstRow = styled.img`
 `;
 export const SectionFourTextSecondRow = styled.div`
   color: white;
-  padding: 13% 10%;
+  padding: 9% 13%;
+  padding-top: 15%;
   height: 49%;
   position: relative;
   @media screen and (max-width: 960px) {
@@ -47,7 +48,7 @@ export const SectionFourTextSecondRow = styled.div`
   }
 `;
 export const SectionFourTextFirstRow = styled.div`
-  padding: 15% 10%;
+  padding: 12% 13%;
   height: 49%;
   position: relative;
   @media screen and (max-width: 960px) {
@@ -70,14 +71,19 @@ export const SectionFourImageSecondRow = styled.img`
 `;
 export const SectionFourTitle = styled.div`
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding-bottom: 2.5%;
   @media screen and (max-width: 960px) {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 `;
 export const SectionFourDescription = styled.div`
+  font-size: 1.1rem;
   padding-bottom: 5%;
+  font-weight: 500;
+  @media screen and (max-width: 960px) {
+    font-size: 0.9rem;
+  }
 `;
 export const SectionFourLink = styled(Link)`
   background-color: #b01f24;
@@ -87,10 +93,11 @@ export const SectionFourLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.875rem;
   @media screen and (max-width: 960px) {
     background-color: #b01f24;
     font-size: 0.75rem;
+    padding: 10px 10px;
     margin-left: 0%;
     height: 0%;
   }
@@ -100,6 +107,9 @@ export const SectionFourWhiteColumn = styled.div`
   height: 100%;
   margin: auto;
   width: 100%;
+  @media screen and (max-width: 960px) {
+    padding-bottom: 7%;
+  }
 `;
 export const SectionFourGreyColumn = styled.div`
   background-color: #404040;
@@ -126,8 +136,8 @@ export const SectionFourGreyColumnImage = styled.div`
 export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
   position: static;
-  left: 40%;
-  width: 25rem;
+  left: 20%;
+  width: 35rem;
   position: absolute;
   z-index: 1;
   background-color: #b01f24;
