@@ -26,4 +26,4 @@ yarn-error.log*
 *.prettierrc
 *.vscode
 *.rest
-*.env
+.env
