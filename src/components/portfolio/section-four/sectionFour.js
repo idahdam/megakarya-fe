@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  SectionFourContainer,
+  SectionFourHref,
   SectionFourRow,
+  SectionFourContainer,
   SectionFourTitle,
   SectionFourColumn,
   SectionFourDescription,
@@ -11,10 +12,9 @@ import {
   SectionFourColumnContainerImage,
   SectionFourColumnContainerRectangleFront,
   SectionFourColumnContainerRectangleBack,
-  SectionFourLink,
 } from "./sectionFour.elements";
 
-const SectionFour = ({ object }) => {
+const SectionFour = ({ object, link }) => {
   const [position, setPosition] = useState(true);
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -55,7 +55,9 @@ const SectionFour = ({ object }) => {
                 <SectionFourDescription>
                   {object.description}
                 </SectionFourDescription>
-                <SectionFourLink to="/product">CONTACT US</SectionFourLink>
+                <SectionFourHref href={`https://${link}`} target="_blank">
+                  CONTACT US
+                </SectionFourHref>
               </SectionFourColumnContainer>
             </SectionFourColumn>
           </>
@@ -79,7 +81,9 @@ const SectionFour = ({ object }) => {
                 <SectionFourDescription>
                   {object.description}
                 </SectionFourDescription>
-                <SectionFourLink to="/product">CONTACT US</SectionFourLink>
+                <SectionFourHref href={`https://${link}`} target="_blank">
+                  CONTACT US
+                </SectionFourHref>
               </SectionFourColumnContainer>
             </SectionFourColumn>
           </>

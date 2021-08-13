@@ -6,6 +6,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 // services
 import { productService } from "../../services/productService";
+import { navbarService } from "../../services/navbarService";
 
 const Product = () => {
   const override = css`
@@ -15,6 +16,7 @@ const Product = () => {
   `;
   let [loading] = useState(true);
   const [hero, setHero] = useState(null);
+  const [contact, setContact] = useState(null);
   const [products, setProducts] = useState([]);
   let [color] = useState("#b01f24");
 
@@ -22,18 +24,21 @@ const Product = () => {
     const fetchAllProducts = async () => {
       const response = await productService.getAllProducts();
       setProducts(response.data);
-      console.log(response.data);
     };
     const fetchHero = async () => {
       const response = await productService.getProductHero();
       setHero(response.data);
-      console.log(response.data);
+    };
+    const fetchContact = async () => {
+      const response = await navbarService.getWhatsappLink();
+      setContact(response.data);
     };
 
     fetchAllProducts();
     fetchHero();
+    fetchContact();
   }, []);
-  if (hero === null)
+  if (hero === null || contact === null)
     return (
       <center>
         <BeatLoader color={color} loading={loading} css={override} size={15} />
@@ -42,7 +47,7 @@ const Product = () => {
   return (
     <>
       <SectionOne hero={hero.HeroProduct} />
-      <SectionTwo products={products} />
+      <SectionTwo products={products} link={contact.whatsappLink} />
     </>
   );
 };

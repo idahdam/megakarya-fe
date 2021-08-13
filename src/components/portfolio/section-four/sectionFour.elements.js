@@ -152,3 +152,20 @@ export const SectionFourLink = styled(Link)`
     height: 0%;
   }
 `;
+
+export const SectionFourHref = styled.a`
+  background-color: #b01f24;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.875rem;
+  @media screen and (max-width: 960px) {
+    background-color: #b01f24;
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    height: 0%;
+  }
+`;

@@ -78,7 +78,7 @@ export const SectionTwoPriceCard = styled.div`
     font-size: 0.9rem;
   }
 `;
-export const SectionTwoButtonCard = styled.button`
+export const SectionTwoButtonCard = styled.a`
   background-color: #40ac3e;
   border: none;
   color: white;

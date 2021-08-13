@@ -33,7 +33,6 @@ const Footer = () => {
     const fetchData = async () => {
       const response = await footerService.getAllContactUsComponents();
       setData(response.data);
-      console.log(response.data);
     };
     fetchData();
     showButton();

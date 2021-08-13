@@ -8,6 +8,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 // services
 import { portfolioService } from "../../services/portfolioService";
+import { navbarService } from "../../services/navbarService";
 
 const Portfolio = () => {
   const override = css`
@@ -17,18 +18,23 @@ const Portfolio = () => {
   `;
   let [loading] = useState(true);
   const [data, setData] = useState(null);
+  const [contact, setContact] = useState(null);
   let [color] = useState("#b01f24");
   useEffect(() => {
     const fetchData = async () => {
       const response = await portfolioService.getAllPortfolioComponents();
       setData(response.data);
-      console.log(response.data);
+    };
+    const fetchContact = async () => {
+      const response = await navbarService.getWhatsappLink();
+      setContact(response.data);
     };
 
     fetchData();
-  }, []);
+    fetchContact();
+  }, [contact]);
 
-  if (data === null)
+  if (data === null || contact === null)
     return (
       <center>
         <BeatLoader color={color} loading={loading} css={override} size={15} />
@@ -39,7 +45,7 @@ const Portfolio = () => {
       <SectionOne object={data.HeroPortfolio} />
       <SectionTwo object={data.client} />
       <SectionThree object={data.testimony} />
-      <SectionFour object={data.FooterHero} />
+      <SectionFour object={data.FooterHero} link={contact.whatsappLink} />
     </>
   );
 };
