@@ -40,6 +40,7 @@ const Footer = () => {
   }, []);
 
   window.addEventListener("resize", showButton);
+  if (data === null) return null;
   return (
     <FooterContainer>
       {position ? (

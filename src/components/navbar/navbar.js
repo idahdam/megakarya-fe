@@ -10,14 +10,17 @@ import {
   NavLinks,
   NavImg,
   NavText,
+  NavHref,
 } from "./navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { navbarService } from "../../services/navbarService";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   // eslint-disable-next-line no-unused-vars
   const [button, setButton] = useState(true);
+  const [data, setData] = useState(null);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(true);
@@ -30,11 +33,17 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const fetchData = async () => {
+      const response = await navbarService.getWhatsappLink();
+      setData(response.data);
+    };
+    fetchData();
     showButton();
   }, []);
 
   window.addEventListener("resize", showButton);
 
+  if (data === null) return null;
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -58,7 +67,14 @@ const Navbar = () => {
                 <NavLinks to="/portfolio">Portfolio</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contactus">Contact Us</NavLinks>
+                <NavHref
+                  href={
+                    data.whatsappLink ? `https://${data.whatsappLink}` : null
+                  }
+                  targ
+                >
+                  Contact Us
+                </NavHref>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

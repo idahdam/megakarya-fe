@@ -180,3 +180,22 @@ export const NavBtnLink = styled(Link)`
   border: none;
   outline: none;
 `;
+
+export const NavHref = styled.a`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  height: 100%;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem 0rem 0rem 0;
+    width: 100%;
+    display: table;
+    &:hover {
+      color: #c4c4c4;
+      transition: all 0.3s ease;
+    }
+  }
+`;
