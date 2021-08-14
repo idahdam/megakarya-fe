@@ -140,6 +140,26 @@ export const NavItem = styled.li`
   }
 `;
 
+export const NavItemDropdown = styled.li`
+  height: 80px;
+  padding: 0 3.5%;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid #101522;
+    transition: all 1s ease;
+    border-bottom: 2px solid white;
+  }
+  @media screen and (max-width: 960px) {
+    width: 50%;
+    &:hover {
+      border-bottom: 2px solid #101522;
+      transition: all 1s ease;
+      border-bottom: 2px solid white;
+    }
+  }
+`;
+
 export const NavLinks = styled(Link)`
   color: #fff;
   display: flex;
@@ -181,12 +201,15 @@ export const NavBtnLink = styled(Link)`
   outline: none;
 `;
 
-export const NavHref = styled.a`
+export const NavHrefDropdown = styled.a`
   color: #fff;
   display: flex;
+  text-align: center;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem;
+  width: 100%;
+  margin: auto;
   height: 100%;
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -198,4 +221,56 @@ export const NavHref = styled.a`
       transition: all 0.3s ease;
     }
   }
+`;
+export const NavHref = styled.a`
+  transition: all 0.3s ease;
+  display: flex;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+  background-color: gray;
+  color: black;
+  opacity: 0.7;
+  :hover {
+    transition: all 0.3s ease;
+    opacity: 1;
+    color: #fff;
+    background-color: #101010;
+  }
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 100%;
+    display: table;
+    &:hover {
+      bacground-color: #101010;
+      transition: all 0.3s ease;
+    }
+  }
+`;
+
+export const NavDropdown = styled.div`
+  transition: all 0.3s ease;
+  width: 100%;
+  display: block;
+  align-items: center;
+`;
+
+export const NavButton = styled.button`
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+`;
+export const NavbarDropdownData = styled.div`
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 `;

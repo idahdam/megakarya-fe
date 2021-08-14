@@ -6,7 +6,7 @@ import {
   SectionTwoRow,
   SectionTwoColumn,
   SectionTwoItemImage,
-  SectionTwoClientName,
+  // SectionTwoClientName,
 } from "./sectionTwo.elements";
 
 const SectionTwo = ({ object }) => {
@@ -19,14 +19,7 @@ const SectionTwo = ({ object }) => {
         {object.map((data, index) => {
           return (
             <SectionTwoColumn>
-              <SectionTwoItemImage
-                src={data.company_logo.url}
-                description={
-                  <SectionTwoClientName>
-                    {data.company_name}
-                  </SectionTwoClientName>
-                }
-              />
+              <SectionTwoItemImage src={data.company_logo.url} />
             </SectionTwoColumn>
           );
         })}

@@ -30,7 +30,6 @@ const SectionThree = ({ object }) => {
         <SectionThreeRow>
           <Carousel
             plugins={[
-              "infinite",
               {
                 resolve: arrowsPlugin,
                 options: {
@@ -41,7 +40,7 @@ const SectionThree = ({ object }) => {
                   ),
                   arrowLeftDisabled: (
                     <SectionThreeCarouselButton>
-                      <AiOutlineArrowLeft size={25} />
+                      <AiOutlineArrowLeft size={25} color={"#808080"} />
                     </SectionThreeCarouselButton>
                   ),
                   arrowRight: (
@@ -51,7 +50,7 @@ const SectionThree = ({ object }) => {
                   ),
                   arrowRightDisabled: (
                     <SectionThreeCarouselButton>
-                      <AiOutlineArrowRight size={25} />
+                      <AiOutlineArrowRight size={25} color={"#808080"} />
                     </SectionThreeCarouselButton>
                   ),
                   addArrowClickHandler: true,

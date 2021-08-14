@@ -17,6 +17,10 @@ export const SectionTwoContainer = styled.div`
 `;
 
 export const SectionTwoRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  grid-gap: 2.5px;
   :after {
     content: "";
     display: table;
@@ -25,12 +29,12 @@ export const SectionTwoRow = styled.div`
 `;
 
 export const SectionTwoColumn = styled.div`
-  float: left;
-  width: 33.33%;
+  min-height: 100px;
   @media screen and (max-width: 960px) {
     width: 100%;
   }
 `;
+
 export const SectionTwoCard = styled.div`
   transition: 0.3s;
   width: 95%;

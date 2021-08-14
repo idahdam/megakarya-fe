@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ImageOverlay } from "react-image-overlay-effect";
+// import { ImageOverlay } from "react-image-overlay-effect";
 
 export const SectionTwoContainer = styled.div`
   padding: 2.5% 0%;
@@ -61,13 +61,17 @@ export const SectionTwoClientName = styled.p`
   color: white;
 `;
 
-export const SectionTwoItemImage = styled(ImageOverlay)`
+export const SectionTwoItemImage = styled.img`
   width: 12.5rem;
   height: 7.5rem;
   object-fit: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  filter: grayscale(100%);
+  :hover {
+    filter: none;
+  }
   @media screen and (max-width: 960px) {
     flex: 50%;
     width: 140px;

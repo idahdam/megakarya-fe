@@ -14,6 +14,7 @@ import {
   SectionFourGreyColumn,
   SectionFourGreyColumnImage,
   SectionFourColumnContainerRectangleFront,
+  SectionFourColumnContainerRectangleFrontContainer,
 } from "./sectionFour.elements";
 
 const SectionFour = ({ objectOne, objectTwo }) => {
@@ -73,7 +74,9 @@ const SectionFour = ({ objectOne, objectTwo }) => {
             </SectionFourColumn>
             <SectionFourColumn>
               <SectionFourGreyColumn>
-                <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
+                <SectionFourColumnContainerRectangleFrontContainer>
+                  <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
+                </SectionFourColumnContainerRectangleFrontContainer>
                 <SectionFourImageSecondRow
                   src={objectTwo.image.url}
                   alt="office"
@@ -110,7 +113,9 @@ const SectionFour = ({ objectOne, objectTwo }) => {
           <SectionFourRow>
             <SectionFourColumn>
               <SectionFourGreyColumnImage>
-                <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
+                <SectionFourColumnContainerRectangleFrontContainer>
+                  <SectionFourColumnContainerRectangleFront></SectionFourColumnContainerRectangleFront>
+                </SectionFourColumnContainerRectangleFrontContainer>
                 <SectionFourImageSecondRow
                   src={objectOne.image.url}
                   alt="office"

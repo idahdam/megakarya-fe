@@ -1,7 +1,7 @@
 import React from "react";
 import {
   SectionTwoColumn,
-  SectionTwoRow,
+  // SectionTwoRow,
   SectionTwoCard,
   SectionTwoImage,
   SectionTwoDescCard,
@@ -11,12 +11,25 @@ import {
   SectionTwoButtonCard,
   SectionTwoTextContainer,
 } from "./sectionTwo.elements";
+import Masonry from "react-masonry-css";
+
+const breakpointColumnsObj = {
+  default: 3,
+  1100: 3,
+  700: 2,
+  500: 1,
+};
 
 const SectionTwo = ({ products, link }) => {
   if (products.length === 0) return null;
   return (
     <SectionTwoContainer>
-      <SectionTwoRow>
+      {/* <SectionTwoRow> */}
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
         {products.map((product, index) => {
           return (
             <SectionTwoColumn>
@@ -38,7 +51,8 @@ const SectionTwo = ({ products, link }) => {
             </SectionTwoColumn>
           );
         })}
-      </SectionTwoRow>
+      </Masonry>
+      {/* </SectionTwoRow> */}
     </SectionTwoContainer>
   );
 };

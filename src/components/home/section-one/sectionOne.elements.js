@@ -9,8 +9,6 @@ export const SectionOneContainer = styled.div`
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  // padding-right: 50px;
-  // padding-left: 50px;
   @media screen and (max-width: 960px) {
     padding-bottom: 10%;
   }
@@ -18,7 +16,7 @@ export const SectionOneContainer = styled.div`
 
 export const SectionOneColumnContainer = styled.div`
   padding-left: 20%;
-  padding-top: 15%;
+  padding-top: 25%;
   width: 70%;
   @media screen and (max-width: 960px) {
     padding: 5% 5%;

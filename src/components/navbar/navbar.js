@@ -11,6 +11,9 @@ import {
   NavImg,
   NavText,
   NavHref,
+  NavHrefDropdown,
+  NavDropdown,
+  NavItemDropdown,
 } from "./navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
@@ -21,6 +24,7 @@ const Navbar = () => {
   // eslint-disable-next-line no-unused-vars
   const [button, setButton] = useState(true);
   const [data, setData] = useState(null);
+  const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(true);
@@ -56,26 +60,64 @@ const Navbar = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
+            <NavMenu click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/product">Product</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/portfolio">Portfolio</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavHref
-                  href={
-                    data.whatsappLink ? `https://${data.whatsappLink}` : null
-                  }
-                  targ
+                <NavLinks
+                  onClick={() => {
+                    handleClick() && setNavbar(false);
+                  }}
+                  click={click}
+                  to="/"
                 >
-                  Contact Us
-                </NavHref>
+                  Home
+                </NavLinks>
               </NavItem>
+              <NavItem>
+                <NavLinks
+                  onClick={() => {
+                    handleClick() && setNavbar(false);
+                  }}
+                  click={click}
+                  to="/product"
+                >
+                  Product
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  onClick={() => {
+                    handleClick() && setNavbar(false);
+                  }}
+                  click={click}
+                  to="/portfolio"
+                >
+                  Portfolio
+                </NavLinks>
+              </NavItem>
+              <NavItemDropdown
+                onMouseEnter={() => setNavbar(true)}
+                onMouseLeave={() => setNavbar(false)}
+              >
+                <NavHrefDropdown onClick={() => setNavbar(!navbar)}>
+                  Contact Us
+                </NavHrefDropdown>
+                {navbar ? (
+                  <NavDropdown>
+                    <NavHref
+                      href={`https://${data.whatsappLink}`}
+                      target="_blank"
+                    >
+                      Whatsapp
+                    </NavHref>
+                    <NavHref
+                      href={`https://${data.whatsappLink}`}
+                      target="_blank"
+                    >
+                      Email
+                    </NavHref>
+                  </NavDropdown>
+                ) : null}
+              </NavItemDropdown>
             </NavMenu>
           </NavbarContainer>
         </Nav>

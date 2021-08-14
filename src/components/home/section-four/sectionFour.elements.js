@@ -62,7 +62,7 @@ export const SectionFourTextFirstRow = styled.div`
 export const SectionFourImageSecondRow = styled.img`
   width: 85%;
   padding-bottom: 7.5%;
-  margin-top: -0%;
+  margin-top: -7%;
   @media screen and (max-width: 960px) {
     display: block;
     width: 85%;
@@ -135,21 +135,20 @@ export const SectionFourGreyColumnImage = styled.div`
     height: 50%;
   }
 `;
+export const SectionFourColumnContainerRectangleFrontContainer = styled.div``;
 
 export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
-  position: static;
-  left: 20%;
   width: 35rem;
-  position: absolute;
+  position: relative;
+  transform: translate(-50%, 0);
   z-index: 1;
   background-color: #b01f24;
   @media screen and (max-width: 960px) {
-    height: 2.5rem;
-    position: static;
-    left: 40%;
-    width: 13rem;
-    position: absolute;
+    height: 2rem;
+    width: 12.5rem;
+    position: relative;
+    transform: translate(60%, 5%);
     z-index: 1;
     background-color: #b01f24;
   }
