@@ -4,6 +4,7 @@ import { Home } from "./pages/Home/Home";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Product from "./pages/Product/Product";
 import ScrollToTop from "./components/scrollToTop/scrollToTop";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/product" component={Product} />
           <Route exact path="/portfolio" component={Portfolio} />
-          <Route component={Home} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </Router>

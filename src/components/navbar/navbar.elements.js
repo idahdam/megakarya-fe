@@ -227,8 +227,7 @@ export const NavHref = styled.a`
   display: flex;
   margin: auto;
   text-decoration: none;
-  text-align: center;
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 1.5rem;
   background-color: gray;
   color: black;
   opacity: 0.7;
@@ -254,9 +253,17 @@ export const NavHref = styled.a`
 
 export const NavDropdown = styled.div`
   transition: all 0.3s ease;
-  width: 100%;
+  width: 152px;
+  transform: translate(-15%, 0%);
   display: block;
+  position: fixed;
   align-items: center;
+  text-align: center;
+  @media screen and (max-width: 960px) {
+    position: static;
+    width: 100%;
+    transform: translate(0%, 0%);
+  }
 `;
 
 export const NavButton = styled.button`

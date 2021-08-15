@@ -25,6 +25,7 @@ export const SectionTwoLine = styled.hr`
     background: linear-gradient(to right, #b01f24 10%, #9f9f9f 10% 80%);
   }
 `;
+
 export const SectionTwoTitle = styled.div`
   padding-left: 15%;
   padding-bottom: 3%;
