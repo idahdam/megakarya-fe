@@ -42,7 +42,7 @@ const SectionTwo = ({ products, link }) => {
                 <SectionTwoTextContainer>
                   <SectionTwoTitleCard>{product.name}</SectionTwoTitleCard>
                   <SectionTwoDescCard>{product.description}</SectionTwoDescCard>
-                  <SectionTwoPriceCard>Rp{product.price}</SectionTwoPriceCard>
+                  <SectionTwoPriceCard>{product.price}</SectionTwoPriceCard>
                   <SectionTwoButtonCard href={`https://${link}`}>
                     OFFER
                   </SectionTwoButtonCard>
