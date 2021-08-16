@@ -15,10 +15,19 @@ export const SectionOneContainer = styled.div`
 `;
 
 export const SectionOneColumnContainer = styled.div`
-  padding-left: 20%;
-  padding-top: 25%;
   width: 70%;
+  padding-left: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media screen and (max-width: 960px) {
+    position: static;
+    padding-left: 0%;
+    padding-top: 0%;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
     padding: 5% 5%;
     font-size: 2rem;
     width: 85%;
@@ -36,7 +45,9 @@ export const SectionOneRow = styled.div`
 
 export const SectionOneColumn = styled.div`
   flex: 1;
+  position: relative;
   @media screen and (max-width: 960px) {
+    position: static;
     width: 100%;
     box-sizing: border-box;
   }
@@ -86,6 +97,11 @@ export const SectionOneColumnImage = styled.img`
 
 export const SectionOneColumnContainerTwo = styled.div`
   height: 100%;
+  transition: 1s all ease;
+  &:hover {
+    transition: 1s all ease;
+    transform: scale(1.05);
+  }
   @media screen and (max-width: 960px) {
     height: 100%;
     padding-top: 0%;

@@ -1,15 +1,32 @@
 import styled from "styled-components";
 
-export const SectionThreeContainer = styled.div`
-  padding: 2.5% 0%;
-  padding-top: 5%;
-  margin-top: -1%;
+export const SectionThreeBackground = styled.div`
+  background-color: #e8e8e8;
+`;
+export const SectionThreeTitleContainer = styled.div`
+  padding: 1.5% 0%;
+  margin-top: -5rem;
   margin-bottom: 0;
   box-sizing: border-box;
-
   z-index: 1;
   width: 100%;
   margin-left: auto;
+  max-width: 1300px;
+  margin-right: auto;
+  @media screen and (max-width: 960px) {
+    margin-top: -5rem;
+  }
+`;
+
+export const SectionThreeContainer = styled.div`
+  padding: 2.5% 0%;
+  margin-top: -1%;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  width: 100%;
+  margin-left: auto;
+  max-width: 1300px;
   margin-right: auto;
   @media screen and (max-width: 960px) {
     margin-bottom: -3%;
@@ -30,20 +47,19 @@ export const SectionThreeTitleMain = styled.div`
 `;
 export const SectionThreeLine = styled.div`
   width: 3px;
-  bottom: -25rem;
   height: 100px;
-  left: 15%;
   z-index: -1;
-  position: absolute;
+  transform: translate(200px, 85px);
+  position: relative;
   background: linear-gradient(to bottom, #9f9f9f 25%, #b01f24 25%);
   @media screen and (max-width: 960px) {
+    transform: translate(0, 0);
     left: 11%;
-    bottom: -45rem;
+    bottom: -6rem;
   }
 `;
 
 export const SectionThreeTestimonyContainer = styled.div`
-  background-color: #e8e8e8;
   height: 100%;
   padding: 0 1%;
   z-index: -1;

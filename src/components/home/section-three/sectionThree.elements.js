@@ -54,9 +54,14 @@ export const SectionThreeRow = styled.div`
 `;
 
 export const SectionThreeCard = styled.div`
+  transition: 1.5s all ease;
   transition: 0.3s;
   padding-bottom: 3%;
   background-color: #e8e8e8;
+  &:hover {
+    transition: 1s all ease;
+    transform: scale(1.05);
+  }
   @media screen and (max-width: 960px) {
     padding-bottom: 3%;
     margin: auto;

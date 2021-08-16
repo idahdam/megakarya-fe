@@ -13,4 +13,13 @@ export const NotFoundContainer = styled.div`
   }
 `;
 
-export const NotFoundText = styled.h1``;
+export const NotFoundText = styled.h3``;
+
+export const NotFoundTextContainer = styled.div`
+  text-align: center;
+  margin: auto;
+  padding: 10rem 0;
+`;
+export const NotFoundTitle = styled.h1`
+  font-size: 6rem;
+`;

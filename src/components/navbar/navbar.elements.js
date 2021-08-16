@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 import { FaTimes } from "react-icons/fa";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 export const Nav = styled.nav`
   background: #101010;
@@ -228,9 +229,9 @@ export const NavHref = styled.a`
   margin: auto;
   text-decoration: none;
   padding: 1.5rem 1.5rem;
-  background-color: gray;
+  background-color: #cfcfcf;
   color: black;
-  opacity: 0.7;
+  opacity: 0.5;
   :hover {
     transition: all 0.3s ease;
     opacity: 1;
@@ -250,13 +251,17 @@ export const NavHref = styled.a`
     }
   }
 `;
-
+export const NavArrowUp = styled(FiChevronUp)`
+  padding-left: 0.75rem;
+  cursor: pointer;
+`;
+export const NavArrowDown = styled(FiChevronDown)`
+  padding-left: 0.75rem;
+  cursor: pointer;
+  transition: all 1s ease;
+`;
 export const NavDropdown = styled.div`
-  transition: all 0.3s ease;
-  width: 152px;
-  transform: translate(-15%, 0%);
   display: block;
-  position: fixed;
   align-items: center;
   text-align: center;
   @media screen and (max-width: 960px) {

@@ -32,6 +32,11 @@ export const SectionFourColumn = styled.div`
 `;
 
 export const SectionFourImageFirstRow = styled.img`
+  transition: 1s all ease;
+  &:hover {
+    transition: 1s all ease;
+    transform: scale(1.05);
+  }
   width: 100%;
   @media screen and (max-width: 960px) {
     max-width: 100%;
@@ -63,6 +68,11 @@ export const SectionFourImageSecondRow = styled.img`
   width: 85%;
   padding-bottom: 7.5%;
   margin-top: -7%;
+  transition: 1s all ease;
+  &:hover {
+    transition: 1s all ease;
+    transform: scale(1.05);
+  }
   @media screen and (max-width: 960px) {
     display: block;
     width: 85%;

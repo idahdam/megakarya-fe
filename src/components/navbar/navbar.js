@@ -14,6 +14,8 @@ import {
   NavHrefDropdown,
   NavDropdown,
   NavItemDropdown,
+  NavArrowDown,
+  NavArrowUp,
 } from "./navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
@@ -99,10 +101,18 @@ const Navbar = () => {
                 onMouseLeave={() => setNavbar(false)}
               >
                 <NavHrefDropdown onClick={() => setNavbar(!navbar)}>
-                  Contact Us
+                  Contact Us{" "}
+                  {navbar ? (
+                    <NavArrowUp size={20} />
+                  ) : (
+                    <NavArrowDown size={20} />
+                  )}
                 </NavHrefDropdown>
                 {navbar ? (
-                  <NavDropdown>
+                  <NavDropdown
+                    onMouseEnter={() => setNavbar(true)}
+                    onMouseLeave={() => setNavbar(false)}
+                  >
                     <NavHref
                       href={`https://${data.whatsappLink}`}
                       target="_blank"

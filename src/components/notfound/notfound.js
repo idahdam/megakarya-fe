@@ -1,9 +1,17 @@
 import React from "react";
-import { NotFoundContainer, NotFoundText } from "./notfound.elements";
+import {
+  NotFoundContainer,
+  NotFoundText,
+  NotFoundTextContainer,
+  NotFoundTitle,
+} from "./notfound.elements";
 const NotFoundComp = () => {
   return (
     <NotFoundContainer>
-      <NotFoundText>404 Page Not Found.</NotFoundText>
+      <NotFoundTextContainer>
+        <NotFoundTitle>404</NotFoundTitle>
+        <NotFoundText>Page Not Found</NotFoundText>
+      </NotFoundTextContainer>
     </NotFoundContainer>
   );
 };
