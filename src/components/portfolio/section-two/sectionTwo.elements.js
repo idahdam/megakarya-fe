@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const SectionTwoContainer = styled.div`
   padding: 2.5% 0%;
-
+  padding-bottom: 2.5%;
   z-index: 1;
   width: 100%;
   max-width: 1300px;

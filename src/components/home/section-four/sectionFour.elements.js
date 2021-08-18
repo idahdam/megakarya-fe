@@ -47,7 +47,7 @@ export const SectionFourImageFirstRow = styled.img`
 export const SectionFourTextSecondRow = styled.div`
   color: white;
   padding: 9% 13%;
-  padding-top: 15%;
+  padding-top: 20%;
   height: 49%;
   position: relative;
   @media screen and (max-width: 960px) {
@@ -57,6 +57,7 @@ export const SectionFourTextSecondRow = styled.div`
 `;
 export const SectionFourTextFirstRow = styled.div`
   padding: 12% 13%;
+  padding-top: 20%;
   height: 49%;
   position: relative;
   @media screen and (max-width: 960px) {

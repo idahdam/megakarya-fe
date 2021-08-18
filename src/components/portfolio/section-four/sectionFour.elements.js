@@ -97,7 +97,7 @@ export const SectionFourColumnContainerTwo = styled.div`
 
 export const SectionFourColumnContainerRectangleBack = styled.div`
   width: 15rem;
-  margin-top: -20rem;
+  margin-top: -19.5rem;
   height: 36rem;
   left: 15rem;
   bottom: 10rem;
