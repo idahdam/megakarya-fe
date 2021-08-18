@@ -13,10 +13,21 @@ export const SectionFourContainer = styled.div`
 `;
 
 export const SectionFourColumnContainer = styled.div`
-  padding-left: 10%;
-  padding-top: 15%;
-  width: 60%;
+  // padding-left: 10%;
+  // padding-top: 15%;
+  // width: 60%;
+
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media screen and (max-width: 960px) {
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+
     padding-left: 0%;
     padding-top: 1%;
     font-size: 2rem;
@@ -35,7 +46,9 @@ export const SectionFourRow = styled.div`
 
 export const SectionFourColumn = styled.div`
   flex: 1;
+  position: relative;
   @media screen and (max-width: 960px) {
+    position: static;
     width: 100%;
     box-sizing: border-box;
   }
