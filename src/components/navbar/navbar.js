@@ -119,10 +119,7 @@ const Navbar = () => {
                     >
                       Whatsapp
                     </NavHref>
-                    <NavHref
-                      href={`https://${data.whatsappLink}`}
-                      target="_blank"
-                    >
+                    <NavHref href={`mailto:${data.email}`} target="_blank">
                       Email
                     </NavHref>
                   </NavDropdown>
