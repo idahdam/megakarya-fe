@@ -78,13 +78,25 @@ export const SectionOneDescription = styled.div`
 `;
 
 export const SectionOneColumnImage = styled.img`
-  padding-left: 2.5%;
-  padding-top: 5%;
-  max-width: 75%;
+  max-width: 100%;
   height: 350px;
   object-fit: cover;
   z-index: -1;
   display: flex;
+
+  vertical-align: top;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 960px) {
     padding-left: 0%;
     padding-top: 0%;
@@ -92,16 +104,18 @@ export const SectionOneColumnImage = styled.img`
     width: 100%;
     height: 15.5rem;
     object-fit: cover;
+
+    &:hover {
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
 `;
 
 export const SectionOneColumnContainerTwo = styled.div`
   height: 100%;
   transition: 1s all ease;
-  &:hover {
-    transition: 1s all ease;
-    transform: scale(1.05);
-  }
   @media screen and (max-width: 960px) {
     height: 100%;
     padding-top: 0%;
@@ -125,7 +139,20 @@ export const SectionOneColumnContainerRectangleBack = styled.div`
 
 export const SectionOneColumnContainerImage = styled.div`
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  width: 80%;
+  position: relative;
+  border: 1px solid #333;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  @media screen and (max-width: 960px) {
+    margin-top: 0%;
+    margin-left: 0%%;
+  }
 `;
 export const SectionOneColumnContainerRectangleFront = styled.div`
   height: 3rem;
@@ -134,6 +161,7 @@ export const SectionOneColumnContainerRectangleFront = styled.div`
   left: 5rem;
   width: 19rem;
   display: flex;
+  z-index: 2;
   background-color: #b01f24;
   @media screen and (max-width: 960px) {
     top: 16.5em;

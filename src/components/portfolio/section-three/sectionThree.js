@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
@@ -41,22 +41,22 @@ const SectionThree = ({ object }) => {
                     options: {
                       arrowLeft: (
                         <SectionThreeCarouselButton>
-                          <AiOutlineArrowLeft size={25} />
+                          <FiChevronLeft size={25} />
                         </SectionThreeCarouselButton>
                       ),
                       arrowLeftDisabled: (
                         <SectionThreeCarouselButton>
-                          <AiOutlineArrowLeft size={25} color={"#808080"} />
+                          <FiChevronLeft size={25} color={"#808080"} />
                         </SectionThreeCarouselButton>
                       ),
                       arrowRight: (
                         <SectionThreeCarouselButton>
-                          <AiOutlineArrowRight size={25} />
+                          <FiChevronRight size={25} />
                         </SectionThreeCarouselButton>
                       ),
                       arrowRightDisabled: (
                         <SectionThreeCarouselButton>
-                          <AiOutlineArrowRight size={25} color={"#808080"} />
+                          <FiChevronRight size={25} color={"#808080"} />
                         </SectionThreeCarouselButton>
                       ),
                       addArrowClickHandler: true,

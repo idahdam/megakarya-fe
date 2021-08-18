@@ -32,16 +32,27 @@ export const SectionFourColumn = styled.div`
 `;
 
 export const SectionFourImageFirstRow = styled.img`
-  transition: 1s all ease;
-  &:hover {
-    transition: 1s all ease;
-    transform: scale(1.05);
-  }
   width: 100%;
+  vertical-align: top;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
   @media screen and (max-width: 960px) {
     max-width: 100%;
     object-fit: cover;
     overflow: hidden;
+    &:hover {
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
 `;
 export const SectionFourTextSecondRow = styled.div`
@@ -55,6 +66,15 @@ export const SectionFourTextSecondRow = styled.div`
     padding-bottom: 5%;
   }
 `;
+
+export const SectionFourImageFirstRowContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+`;
+
 export const SectionFourTextFirstRow = styled.div`
   padding: 12% 13%;
   padding-top: 20%;
@@ -66,21 +86,29 @@ export const SectionFourTextFirstRow = styled.div`
   }
 `;
 export const SectionFourImageSecondRow = styled.img`
-  width: 85%;
-  padding-bottom: 7.5%;
-  margin-top: -7%;
-  transition: 1s all ease;
+  width: 100%;
+  vertical-align: top;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   &:hover {
-    transition: 1s all ease;
-    transform: scale(1.05);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
   @media screen and (max-width: 960px) {
     display: block;
+    margin-top: -4%;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
     overflow: hidden;
+    &:hover {
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
 `;
 export const SectionFourTitle = styled.div`
@@ -146,20 +174,31 @@ export const SectionFourGreyColumnImage = styled.div`
     height: 50%;
   }
 `;
+
+export const SectionFourImageSecondRowContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  width: 85%;
+  padding-bottom: 7.5%;
+  margin-top: -7%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+`;
 export const SectionFourColumnContainerRectangleFrontContainer = styled.div``;
 
 export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
   width: 35rem;
   position: relative;
-  transform: translate(-50%, 0);
+  transform: translate(-90%, -50%);
   z-index: 1;
   background-color: #b01f24;
   @media screen and (max-width: 960px) {
-    height: 2rem;
-    width: 12.5rem;
+    height: 1.5rem;
+    width: 10rem;
     position: relative;
-    transform: translate(60%, 5%);
+    transform: translate(100%, 5%);
     z-index: 1;
     background-color: #b01f24;
   }

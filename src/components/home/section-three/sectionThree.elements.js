@@ -61,12 +61,18 @@ export const SectionThreeCard = styled.div`
   &:hover {
     transition: 1s all ease;
     transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
   @media screen and (max-width: 960px) {
     padding-bottom: 3%;
     margin: auto;
     width: 90%;
     padding: 0px;
+    &:hover {
+      transform: scale(1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 `;
 

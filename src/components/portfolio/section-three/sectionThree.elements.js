@@ -90,7 +90,7 @@ export const SectionThreeRow = styled.div`
 export const SectionThreeColumn = styled.div`
   flex: 1;
   @media screen and (max-width: 960px) {
-    width: 100%;
+    flex: 1;
     box-sizing: border-box;
   }
 `;
@@ -147,7 +147,7 @@ export const SectionThreeColumnImage = styled.img`
   position: relative;
   display: flex;
   @media screen and (max-width: 960px) {
-    display: none;
+    display: block;
     padding-left: 5%;
     padding-top: 0%;
     padding-bottom: 0%;
