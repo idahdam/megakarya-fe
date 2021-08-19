@@ -180,7 +180,7 @@ export const SectionFourImageSecondRowContainer = styled.div`
   overflow: hidden;
   -moz-box-sizing: border-box;
   width: 85%;
-  padding-bottom: 7.5%;
+  margin-bottom: 7.5%;
   margin-top: -7%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -198,7 +198,7 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
     height: 1.5rem;
     width: 10rem;
     position: relative;
-    transform: translate(100%, 5%);
+    transform: translate(100%, -15%);
     z-index: 1;
     background-color: #b01f24;
   }

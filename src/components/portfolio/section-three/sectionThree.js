@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel"; // for desktop
+import Carousel, {
+  arrowsPlugin,
+  autoplayPlugin,
+} from "@brainhubeu/react-carousel"; // for desktop
 import "@brainhubeu/react-carousel/lib/style.css";
 import Slider from "react-slick"; // for mobile
 import "slick-carousel/slick/slick.css";
@@ -112,7 +115,14 @@ const SectionThree = ({ object }) => {
                           addArrowClickHandler: true,
                         },
                       },
+                      {
+                        resolve: autoplayPlugin,
+                        options: {
+                          interval: 500,
+                        },
+                      },
                     ]}
+                    animationSpeed={1000}
                   >
                     {object.map((data, index) => {
                       return (
