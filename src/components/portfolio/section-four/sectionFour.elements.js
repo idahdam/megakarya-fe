@@ -54,7 +54,7 @@ export const SectionFourTitle = styled.div`
   font-size: 3rem;
   font-weight: bold;
   @media screen and (max-width: 960px) {
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 2.5%;
     font-size: 1.5rem;
     width: 100%;
@@ -68,6 +68,7 @@ export const SectionFourDescription = styled.div`
   padding-bottom: 5%;
   @media screen and (max-width: 960px) {
     padding-bottom: 5%;
+    font-weight: 600;
     font-size: 0.9rem;
     width: 100%;
   }
