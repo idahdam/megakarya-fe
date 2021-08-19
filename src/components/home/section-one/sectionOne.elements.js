@@ -142,7 +142,6 @@ export const SectionOneColumnContainerImage = styled.div`
   z-index: 1;
   width: 80%;
   position: relative;
-  border: 1px solid #333;
   overflow: hidden;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

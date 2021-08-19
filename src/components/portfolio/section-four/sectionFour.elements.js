@@ -74,13 +74,32 @@ export const SectionFourDescription = styled.div`
 `;
 
 export const SectionFourColumnImage = styled.img`
-  padding-left: 20%;
-  padding-top: 5%;
-  max-width: 75%;
+  max-width: 100%;
   height: 350px;
   object-fit: cover;
   z-index: -1;
   display: flex;
+
+  vertical-align: top;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 960px) {
+    &:hover {
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
   @media screen and (max-width: 960px) {
     padding-left: 0%;
     padding-top: 5rem;
@@ -114,16 +133,23 @@ export const SectionFourColumnContainerRectangleBack = styled.div`
   @media screen and (max-width: 960px) {
     bottom: 10rem;
     width: 10rem;
-    height: 30rem;
+    height: 29rem;
     left: 2.5rem;
   }
 `;
 
 export const SectionFourColumnContainerImage = styled.div`
-  width: 100%;
+  width: 75%;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   position: relative;
+  position: relative;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20%;
+  margin-top: 5%;
 `;
 export const SectionFourColumnContainerRectangleFront = styled.div`
   height: 2.5rem;
@@ -132,6 +158,7 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
   left: 18rem;
   width: 19rem;
   display: flex;
+  z-index: 2;
   background-color: #b01f24;
   @media screen and (max-width: 960px) {
     top: 6em;
