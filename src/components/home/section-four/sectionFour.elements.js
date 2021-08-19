@@ -160,6 +160,7 @@ export const SectionFourGreyColumn = styled.div`
   width: 100%;
   @media screen and (max-width: 960px) {
     background-color: #404040;
+    padding-bottom: 5%;
     height: 0%;
   }
 `;
