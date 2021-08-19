@@ -228,7 +228,9 @@ export const NavHref = styled.a`
   display: flex;
   margin: auto;
   text-decoration: none;
+  text-indent: 15px;
   padding: 1.5rem 1.5rem;
+  margin: 0 -1.45rem;
   background-color: #cfcfcf;
   color: black;
   opacity: 0.5;

@@ -81,7 +81,7 @@ export const SectionFourTextFirstRow = styled.div`
   height: 49%;
   position: relative;
   @media screen and (max-width: 960px) {
-    padding: 0% 7.5%;
+    padding: 10% 7.5%;
     padding-bottom: 5%;
   }
 `;

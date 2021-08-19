@@ -13,10 +13,6 @@ export const SectionFourContainer = styled.div`
 `;
 
 export const SectionFourColumnContainer = styled.div`
-  // padding-left: 10%;
-  // padding-top: 15%;
-  // width: 60%;
-
   width: 85%;
   position: absolute;
   top: 50%;
@@ -27,7 +23,6 @@ export const SectionFourColumnContainer = styled.div`
     top: 0%;
     left: 0%;
     transform: translate(0%, 0%);
-
     padding-left: 0%;
     padding-top: 1%;
     font-size: 2rem;
@@ -88,9 +83,8 @@ export const SectionFourColumnImage = styled.img`
   display: flex;
   @media screen and (max-width: 960px) {
     padding-left: 0%;
-    padding-top: 10%;
-    font-size: 1rem;
-    width: 100%;
+    padding-top: 5rem;
+    max-width: 100%;
     height: 15.5rem;
     object-fit: cover;
   }
@@ -102,7 +96,6 @@ export const SectionFourColumnContainerTwo = styled.div`
   @media screen and (max-width: 960px) {
     height: 100%;
     padding-top: 0%;
-    min-width: 800px;
     margin: 0 auto;
     margin-top: 1%;
   }
@@ -143,6 +136,7 @@ export const SectionFourColumnContainerRectangleFront = styled.div`
   @media screen and (max-width: 960px) {
     top: 6em;
     left: 1rem;
+    display: block;
     margin-top: -3rem;
     height: 2rem;
     width: 13rem;

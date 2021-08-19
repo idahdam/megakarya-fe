@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const SectionThreeBackground = styled.div`
   background-color: #e8e8e8;
+  @media screen and (max-width: 960px) {
+    padding-bottom: 3.5rem;
+    margin-bottom: 0;
+  }
 `;
 export const SectionThreeTitleContainer = styled.div`
   padding: 1.5% 0%;
@@ -181,4 +185,34 @@ export const SectionThreeCarouselButton = styled.button`
   background-color: #e8e8e8;
   border: transparent;
   cursor: pointer;
+`;
+
+export const SectionThreeMobileRow = styled.div`
+  :after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+`;
+export const SectionThreeMobileColumn = styled.div`
+  float: left;
+  width: 100%;
+`;
+
+export const SectionThreeMobileImageContainer = styled.div``;
+export const SectionThreeMobileImage = styled.img`
+  padding-left: 0%;
+  font-size: 1rem;
+  width: 100%;
+  height: 15.5rem;
+  object-fit: cover;
+`;
+
+export const SectionThreeMobileTextContainer = styled.div`
+  padding: 0 2rem;
+  padding-top: 1.5rem;
+  margin-bottom: -1.5rem;
+  @media screen and (max-width: 960px) {
+    padding: 1.5rem 2rem;
+  }
 `;
