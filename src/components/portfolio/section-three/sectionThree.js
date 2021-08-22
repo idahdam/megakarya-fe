@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Carousel, {
   arrowsPlugin,
-  autoplayPlugin,
 } from "@brainhubeu/react-carousel"; // for desktop
 import "@brainhubeu/react-carousel/lib/style.css";
 import Slider from "react-slick"; // for mobile
