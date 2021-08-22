@@ -115,12 +115,6 @@ const SectionThree = ({ object }) => {
                           addArrowClickHandler: true,
                         },
                       },
-                      {
-                        resolve: autoplayPlugin,
-                        options: {
-                          interval: 500,
-                        },
-                      },
                     ]}
                     animationSpeed={1000}
                   >
