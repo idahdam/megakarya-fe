@@ -47,7 +47,11 @@ function App() {
           <link rel="canonical" href="https://tmtrade.id"></link>
           <meta
             name="keywords"
-            content={seo.keywords.map((item) => `${item.keyword}`)}
+            content={
+              seo.keywords
+                ? seo.keywords.map((item) => `${item.keyword}`)
+                : null
+            }
           />
         </Helmet>
         <ScrollToTop />
