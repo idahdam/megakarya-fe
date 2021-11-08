@@ -11,18 +11,11 @@ import ScrollToTop from "./components/scrollToTop/scrollToTop";
 import NotFound from "./pages/NotFound";
 
 function App() {
-  // const override = css`
-  //   display: block;
-  //   margin: 0 auto;
-  //   border-color: red;
-  // `;
   let [loading, setLoading] = useState(true);
-  // let [color] = useState("#b01f24");
   const [seo, setSeo] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const response = await seoService.getAllSeo();
-      console.log(response.data);
       setSeo(response.data);
     };
     fetchData().then(() => setLoading(false));
