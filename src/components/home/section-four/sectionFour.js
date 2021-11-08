@@ -55,7 +55,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
                   <SectionFourDescription>
                     {objectOne.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/product">
+                  <SectionFourLink to={objectOne.button_link}>
                     {objectOne.button_title}
                   </SectionFourLink>
                 </SectionFourTextSecondRow>
@@ -70,7 +70,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
                   <SectionFourDescription>
                     {objectTwo.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/portfolio">
+                  <SectionFourLink to={objectTwo.button_link}>
                     {objectTwo.button_title}
                   </SectionFourLink>
                 </SectionFourTextFirstRow>
@@ -109,7 +109,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
                   <SectionFourDescription>
                     {objectOne.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/product">
+                  <SectionFourLink to={objectOne.button_link}>
                     {objectOne.button_title}
                   </SectionFourLink>
                 </SectionFourTextSecondRow>
@@ -136,7 +136,7 @@ const SectionFour = ({ objectOne, objectTwo }) => {
                   <SectionFourDescription>
                     {objectTwo.description}
                   </SectionFourDescription>
-                  <SectionFourLink to="/portfolio">
+                  <SectionFourLink to={objectTwo.button_link}>
                     {objectTwo.button_title}
                   </SectionFourLink>
                 </SectionFourTextFirstRow>
