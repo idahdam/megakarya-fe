@@ -14,6 +14,7 @@
     "react": "^17.0.2",
     "react-awesome-slider": "^1.0.1",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-image-overlay-effect": "^1.0.0",
     "react-magic-slider-dots": "^1.2.2",
