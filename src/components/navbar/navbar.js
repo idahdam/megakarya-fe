@@ -85,7 +85,7 @@ const Navbar = () => {
                   Product
                 </NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   onClick={() => {
                     handleClick() && setNavbar(false);
@@ -95,7 +95,7 @@ const Navbar = () => {
                 >
                   Portfolio
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
               <NavItemDropdown
                 onMouseEnter={() => setNavbar(true)}
                 onMouseLeave={() => setNavbar(false)}
