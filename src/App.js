@@ -4,20 +4,20 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Footer, Navbar } from "./components";
 import { seoService } from "./services/seoService";
 import { Home } from "./pages/Home/Home";
-import { css } from "@emotion/react";
+// import { css } from "@emotion/react";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Product from "./pages/Product/Product";
 import ScrollToTop from "./components/scrollToTop/scrollToTop";
 import NotFound from "./pages/NotFound";
 
 function App() {
-  const override = css`
-    display: block;
-    margin: 0 auto;
-    border-color: red;
-  `;
+  // const override = css`
+  //   display: block;
+  //   margin: 0 auto;
+  //   border-color: red;
+  // `;
   let [loading, setLoading] = useState(true);
-  let [color] = useState("#b01f24");
+  // let [color] = useState("#b01f24");
   const [seo, setSeo] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
